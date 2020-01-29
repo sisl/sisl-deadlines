@@ -11,6 +11,6 @@ github_username: sisl
 github_repo: sisl-deadlines
 
 markdown: kramdown
-ga_id: UA-36274081-2
+ga_id: 
 
 include: ['_pages']
