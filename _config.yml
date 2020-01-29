@@ -1,15 +1,14 @@
-title: AI Conference Deadlines # (Maintained by @abhshkdz)
-# email: abhshkdz@vt.edu
-description: Countdowns to top CV/NLP/ML/Robotics/AI conference deadlines
-author: Abhishek Das
+title: SISL Conference Deadlines # (Maintained by @mossr)
+description: Countdowns to top AI/ML/Aero/Auto/Robitics/Validation conference deadlines pertaining to research at the Stanford Intelligent Systems Laboratory (SISL)
+author: Robert Moss (forked from Abhishek Das)
 
-domain: "aideadlin.es"
-baseurl: ""
+domain: "sisl.github.io"
+baseurl: "/sisl-deadlines"
 
-twitter_username: abhshkdz
-twitter_hashtag: machinelearning
-github_username: abhshkdz
-github_repo: ai-deadlines
+twitter_username: SISLaboratory
+twitter_hashtag: sisl
+github_username: sisl
+github_repo: sisl-deadlines
 
 markdown: kramdown
 ga_id: UA-36274081-2
