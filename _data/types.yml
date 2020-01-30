@@ -1,13 +1,11 @@
 ---
 - name: Machine Learning
   sub: ML
-- name: Computer Vision
-  sub: CV
-- name: Natural Language Proc
-  sub: NLP
+- name: Aerospace
+  sub: AERO
+- name: Autonomous Driving
+  sub: AUTO
 - name: Robotics
   sub: RO
-- name: Speech/SigProc
-  sub: SP
-- name: Data Mining
-  sub: DM
+- name: Validation
+  sub: VV
