@@ -1,6 +1,6 @@
 ## SISL Deadlines [![Build Status](https://travis-ci.com/sisl/sisl-deadlines.svg?branch=gh-pages)](https://travis-ci.com/sisl/sisl-deadlines)
 
-Countdown timers to keep track of a bunch of AI/ML/Aero/Auto/Robotics/Validation conference deadlines pertaining to research at the Stanford Intelligent Systems Laboratory (SISL).
+Countdown timers to keep track of a bunch of AI/Aerospace/Autonomous Driving/Robotics/Validation conference deadlines relating to research at the Stanford Intelligent Systems Laboratory (SISL).
 
 ## Adding/updating a conference
 
