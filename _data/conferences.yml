@@ -1,17 +1,5 @@
 ---
 
-- title: RSS
-  fullname: 'Robotics: Science and Systems'
-  year: 2020
-  id: rss20
-  link: https://roboticsconference.org/
-  rank: 55
-  deadline: '2020-01-31 23:59:59'
-  timezone: UTC-12
-  date: July 12-17, 2020
-  place: Oregon State University at Corvallis, Oregon
-  sub: RO
-
 - title: IV
   fullname: IEEE Intelligent Vehicles Symposium
   year: 2020
@@ -298,6 +286,18 @@
   timezone: UTC-12
   date: August 24-26, 2020
   place: "Montr\xC3\xA9al, Canada"
+  sub: RO
+
+- title: RSS
+  fullname: 'Robotics: Science and Systems'
+  year: 2020
+  id: rss20
+  link: https://roboticsconference.org/
+  rank: 55
+  deadline: '2020-01-31 23:59:59'
+  timezone: UTC-12
+  date: July 12-17, 2020
+  place: Oregon State University at Corvallis, Oregon
   sub: RO
 
 - title: NeurIPS
