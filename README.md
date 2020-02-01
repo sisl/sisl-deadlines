@@ -33,7 +33,7 @@ To add or update information:
 - [x] Bold note outside of YML.
 - [x] Abstract deadline under Deadline
 	- [x] Organized by that FIRST then paper deadline
-- [ ] Fix Google calendar integration
+- [x] Fix Google calendar integration
 - [x] Combine SISL spreadsheet and wiki
 
 ## Forks & other useful listings
