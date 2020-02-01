@@ -183,6 +183,9 @@ footer {
   .conf-date {
     display: none;
   }
+  .conf-title-box {
+    padding-right: 2px;
+  }
   .note {
     display: none;
   }

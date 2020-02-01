@@ -72,7 +72,7 @@
         {% for conf in site.data.conferences %}
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row conf-row">
-              <div class="col-xs-5 col-sm-6">
+              <div class="col-xs-5 col-sm-6 conf-title-box">
                   <a class="conf-title" target="_blank" href="{{conf.link}}">{{conf.title}} {{conf.year}}</a> <sup><a class="conf-rank" target="_blank" href="http://www.guide2research.com/topconf/"></a></sup>
               </div>
               <div class="col-xs-7 col-sm-6">
