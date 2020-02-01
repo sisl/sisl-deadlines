@@ -1,15 +1,63 @@
 ---
 
-- title: IVS
+- title: RSS
+  fullname: 'Robotics: Science and Systems'
+  year: 2020
+  id: rss20
+  link: https://roboticsconference.org/
+  rank: 55
+  deadline: '2020-01-31 23:59:59'
+  timezone: UTC-12
+  date: July 12-17, 2020
+  place: Oregon State University at Corvallis, Oregon
+  sub: RO
+
+- title: IV
   fullname: IEEE Intelligent Vehicles Symposium
   year: 2020
-  id: ivs20
+  id: iv20
   link: https://2020.ieee-iv.org/
   date: June 23-26, 2020
   deadline: '2020-02-01 23:59:59'
   timezone: America/Los_Angeles
   place: Las Vegas, Nevada
   sub: AUTO
+
+- title: ICML
+  fullname: International Conference on Machine Learning
+  year: 2020
+  id: icml20
+  link: https://icml.cc/Conferences/2020
+  rank: 4
+  abstract_deadline: '2020-01-30 23:59:00'
+  deadline: '2020-02-06 23:59:00'
+  timezone: UTC-12
+  date: July 12-18, 2020
+  place: Vienna, Austria
+  sub: AI
+
+- title: UAI
+  fullname: Conference on Uncertainty in Artificial Intelligence
+  year: 2020
+  id: uai20
+  link: http://auai.org/uai2020/
+  rank: 103
+  deadline: '2020-02-20 23:59:59'
+  timezone: America/New_York
+  date: August 3-6, 2020
+  place: Toronto, Canada
+  sub: AI
+
+- title: OpML
+  fullname: USENIX Conference on Operational Machine Learning
+  year: 2020
+  id: opml20
+  link: https://www.usenix.org/conference/opml20
+  date: May 1, 2020
+  deadline: '2020-02-25 17:00:00'
+  timezone: America/Los_Angeles
+  place: Santa Clara, California
+  sub: AI
 
 - title: ITSC
   fullname: IEEE International Conference on Intelligent Transportation Systems
@@ -28,12 +76,23 @@
   id: dasc20
   link: https://2020.dasconline.org/
   date: October 11-15, 2020
-  deadline: '2020-05-22 23:59:59'
   abstract_deadline: '2020-03-06 23:59:59'
+  deadline: '2020-05-22 23:59:59'
   timezone: America/Los_Angeles
   place: San Antonio, Texas
   sub: AA
   note: Final paper submission of July 17th if no editorial review is requested
+
+- title: CDC
+  fullname: IEEE Conference on Decision and Control
+  year: 2020
+  id: cdc20
+  link: https://cdc2020.ieeecss.org/
+  deadline: '2020-03-17 23:59:59'
+  timezone: America/New_York
+  date: December 8-11, 2020
+  place: Jeju Island, Republic of Korea
+  sub: AI
 
 - title: AVIATION
   fullname: AIAA AVIATION Forum and Exposition
@@ -42,22 +101,217 @@
   link: https://www.aiaa.org/aviation
   date: June 15-19, 2020
   deadline: '2020-05-14 20:00:00'
-  abstract_deadline: '2019-11-07 20:00:00'
   timezone: America/New_York
   place: Reno, Nevada
   sub: AA
 
-- title: SciTech
-  fullname: AIAA SciTech Forum and Exposition
-  year: 2021
-  id: scitech21
-  link: https://www.aiaa.org/SciTech
-  date: January 11-15, 2021
-  deadline: TBD
-  abstract_deadline: TBD
-  timezone: America/New_York
-  place: Nashville, Tennessee
-  sub: AA
+- title: CoRL
+  fullname: Conference on Robot Learning
+  year: 2019
+  id: corl19
+  link: http://www.robot-learning.org
+  deadline: '2019-07-07 23:59:59'
+  timezone: UTC-7
+  date: October 30 - November 1, 2019
+  place: Osaka, Japan
+  sub: RO
+
+- title: IAAI
+  fullname: AAAI Conference on Innovative Applications of Artificial Intelligence
+  year: 2020
+  id: iaai20
+  link: https://aaai.org/Conferences/AAAI-20/iaai-20-call/
+  date: Feburary 9-11, 2020
+  deadline: '2019-09-05 23:59:59'
+  timezone: America/Los_Angeles
+  place: New York, New York
+  sub: AI
+
+- title: AAAI
+  fullname: AAAI Conference on Artificial Intelligence
+  year: 2020
+  id: aaai20
+  link: https://aaai.org/Conferences/AAAI-20/aaai20call/
+  rank: 7
+  date: Feburary 7-12, 2020
+  abstract_deadline: '2019-08-30 23:59:59'
+  deadline: '2019-09-05 23:59:59'
+  timezone: UTC-10
+  place: New York, New York
+  sub: AI
+  note: Doctoral consortium
+
+- title: ICRA
+  fullname: IEEE International Conference on Robotics and Automation
+  year: 2020
+  id: icra20
+  link: https://www.icra2020.org/
+  rank: 11
+  date: May 31 - June 4, 2020
+  deadline: '2019-09-15 23:59:59'
+  timezone: America/Los_Angeles
+  place: Paris, France
+  sub: RO
+
+- title: ACC
+  fullname: American Control Conference
+  year: 2020
+  id: acc20
+  link: http://acc2020.a2c2.org/
+  rank: 73
+  deadline: '2019-09-23 23:59:59'
+  timezone: America/Los_Angeles
+  date: July 1-3, 2020
+  place: Denver, Colorado
+  sub: RO
+
+- title: ICLR
+  fullname: International Conference on Learning Representations
+  year: 2020
+  id: iclr20
+  link: http://iclr.cc/
+  deadline: '2019-09-25 17:59:59'
+  timezone: Africa/Nairobi
+  date: April 30, 2020
+  place: Addis Ababa, Ethiopia
+  sub: AI
+
+- title: TACAS
+  fullname: International Conference on Tools and Algorithms for the Construction
+    and Analysis of Systems
+  year: 2020
+  id: tacas20
+  link: https://www.etaps.org/2020/tacas
+  rank: 82
+  date: April 25-30, 2020
+  deadline: '2019-10-24 23:59:00'
+  timezone: UTC-12
+  place: Dublin, Ireland
+  sub: VV
+
+- title: ECAI
+  fullname: European Conference on Artificial Intelligence
+  year: 2020
+  id: ecai20
+  link: http://ecai2020.eu/
+  rank: 159
+  date: June 8-12, 2020
+  deadline: '2019-11-15 23:59:00'
+  timezone: UTC-12
+  place: Santiago de Compostela, Spain
+  sub: AI
+
+- title: AAMAS
+  fullname: International Conference on Autonomous Agents and Multi-Agent Systems
+  year: 2020
+  id: aamas20
+  link: https://aamas2020.conference.auckland.ac.nz/
+  rank: 176
+  deadline: '2019-11-15 23:59:59'
+  timezone: UTC-12
+  date: May 9-13, 2020
+  place: Auckland, New Zealand
+  sub: RO
+  note: Doctoral consortium
+
+- title: ICAPS
+  fullname: International Conference on Automated Planning and Scheduling
+  year: 2020
+  id: icaps20
+  link: https://icaps20.icaps-conference.org/
+  rank: 134
+  deadline: '2019-11-20 23:59:59'
+  abstract_deadline: '2019-11-15 23:59:59'
+  timezone: UTC-12
+  date: June 14-19, 2020
+  place: Nancy, France
+  sub: AI
+  note: Doctoral consortium
+
+- title: ICAART
+  fullname: International Conference on Agents and Artificial Intelligence
+  year: 2020
+  id: icaart20
+  link: http://www.icaart.org/
+  deadline: '2019-12-19 23:59:59'
+  timezone: America/Los_Angeles
+  date: Feburary 22-24, 2020
+  place: Velletta, Malta
+  sub: AI
+  note: Doctoral consortium
+
+- title: NFM
+  fullname: NASA Formal Methods Symposium
+  year: 2020
+  id: nfm20
+  link: https://ti.arc.nasa.gov/events/nfm-2020/
+  date: May 11-15, 2020
+  abstract_deadline: '2019-12-24 23:59:59'
+  deadline: '2019-12-30 23:59:59'
+  timezone: UTC-12
+  place: NASA Ames, Moffett Field, California
+  sub: VV
+
+- title: IROS
+  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  year: 2020
+  id: iros20
+  link: http://www.iros2020.org/
+  rank: 31
+  date: October 25-29, 2020
+  deadline: '2019-12-30 23:59:59'
+  timezone: UTC-12
+  place: Las Vegas, Nevada
+  sub: RO
+
+- title: IJCAI
+  fullname: International Joint Conference on Artificial Intelligence
+  year: 2020
+  id: ijcai20
+  link: https://ijcai20.org/
+  rank: 22
+  date: July 11-17, 2020
+  abstract_deadline: '2020-01-15 23:59:59'
+  deadline: '2020-01-21 23:59:59'
+  timezone: UTC-12
+  place: Yokohama, Japan
+  sub: AI
+
+- title: CAV
+  fullname: International Conference on Computer-Aided Verification
+  year: 2020
+  id: cav20
+  link: http://i-cav.org/2020/
+  rank: 83
+  date: July 19-24, 2020
+  deadline: '2020-01-28 23:59:59'
+  timezone: UTC-12
+  place: Los Angeles, California
+  sub: VV
+
+- title: CCTA
+  fullname: Conference on Control Technology and Applications
+  year: 2020
+  id: ccta20
+  link: https://ccta2020.ieeecss.org/
+  deadline: '2020-01-30 23:59:59'
+  timezone: UTC-12
+  date: August 24-26, 2020
+  place: "Montr\xC3\xA9al, Canada"
+  sub: RO
+
+- title: NeurIPS
+  fullname: Conference on Neural Information Processing Systems
+  year: 2020
+  id: neurips20
+  link: https://neurips.cc/Conferences/2020/Dates
+  rank: 2
+  deadline: TBA
+  abstract_deadline: TBA
+  timezone: America/Los_Angeles
+  date: December 6-12, 2020
+  place: Vancouver Convention Centre, Canada
+  sub: AI
 
 - title: AIAA Space
   fullname: AIAA Space and Astronautics Forum and Exposition
@@ -67,6 +321,28 @@
   date: TBD
   deadline: TBD
   place: TBD
+  sub: AA
+
+- title: FSW
+  fullname: NASA Flight Software Workshop
+  year: 2020
+  id: fsw20
+  link: http://flightsoftware.jhuapl.edu/
+  date: TBD
+  deadline: TBD
+  place: TBD
+  sub: AA
+
+- title: SciTech
+  fullname: AIAA SciTech Forum and Exposition
+  year: 2021
+  id: scitech21
+  link: https://www.aiaa.org/SciTech
+  date: January 11-15, 2021
+  abstract_deadline: TBD
+  deadline: TBD
+  timezone: America/New_York
+  place: Nashville, Tennessee
   sub: AA
 
 - title: ATM Seminar

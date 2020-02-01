@@ -99,28 +99,39 @@ def query_yes_no(question, default="no"):
 with open("../_data/conferences.yml", 'r') as stream:
     try:
         # Sort based on 'abstract_deadline' if key exists, default to 'deadline'
-        def key(x):
-            return 'abstract_deadline' if 'abstract_deadline' in x else 'deadline'
+        def deadline(x):
+            # if (today.diff(abstractDate) < 0) {
+            # dl = x['abstract_deadline'] if 'abstract_deadline' in x else '1970-01-01 00:00:00'
+            if ('abstract_deadline' in x and x['abstract_deadline'].lower() not in tba_words and pytz.utc.normalize(datetime.datetime.strptime(x['abstract_deadline'], dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))).strftime(dateformat) > right_now):
+                dl = x['abstract_deadline']
+            else:
+                dl = x['deadline']
+            return dl
 
         data = yaml.load(stream, Loader=Loader)
         print("Initial Sorting:")
         for q in data:
-            print(q[key(q)], " - ", q["title"])
+            print(deadline(q), " - ", q["title"])
         print("\n\n")
 
-        conf = [x for x in data if x[key(x)].lower() not in tba_words]
-        tba = [x for x in data if x[key(x)].lower() in tba_words]
+        conf = [x for x in data if x['deadline'].lower() not in tba_words]
+        tba = [x for x in data if x['deadline'].lower() in tba_words]
 
         # just sort:
-        conf.sort(key=lambda x: pytz.utc.normalize(datetime.datetime.strptime(x[key(x)], dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))))
+        conf.sort(key=lambda x: pytz.utc.normalize(datetime.datetime.strptime(deadline(x), dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))))
         print("Date Sorting:")
         for q in conf + tba:
-            print(q[key(q)], " - ", q["title"])
+            print(deadline(q), " - ", q["title"])
         print("\n\n")
-        conf.sort(key=lambda x: pytz.utc.normalize(datetime.datetime.strptime(x[key(x)], dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))).strftime(dateformat) < right_now)
+
+        # Sort remaining conferences relative to 'right_now' using closest date b/w 'abstract_deadline' and 'deadline'
+        conf.sort(key=lambda x: pytz.utc.normalize(datetime.datetime.strptime(deadline(x), dateformat).replace(tzinfo=pytz.timezone(x['timezone'].replace('UTC+', 'Etc/GMT-').replace('UTC-', 'Etc/GMT+')))).strftime(dateformat) < right_now)
+
+        # sort TBA by year
+        tba.sort(key=lambda x: x['year'])
         print("Date and Passed Deadline Sorting with tba:")
         for q in conf + tba:
-            print(q[key(q)], " - ", q["title"])
+            print(deadline(q), " - ", q["title"])
         print("\n\n")
 
         with open('sorted_data.yml', 'w') as outfile:
@@ -133,3 +144,6 @@ with open("../_data/conferences.yml", 'r') as stream:
                 outfile.write('\n')
     except yaml.YAMLError as exc:
         print(exc)
+
+# Replace conference.yml file
+copyfile('sorted_data.yml', '../_data/conferences.yml')

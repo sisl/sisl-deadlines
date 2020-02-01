@@ -9,28 +9,32 @@ Migrating from old SISL conference wiki: [https://github.com/sisl/wiki/wiki/Conf
 To add or update information:
 - Fork the repository
 - Update `_data/conferences.yml`
-- Make sure it has the `title`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
-    + See available timezone strings [here](https://momentjs.com/timezone/).
-- Optionally add a `note` and `abstract_deadline` in case the conference has a separate mandatory abstract deadline
+- Make sure it has the `title`, `fullname`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
+    + See available timezone strings [here](https://momentjs.com/timezone/)
+- Optionally:
+	+ Add an `abstract_deadline` in case the conference has a separate mandatory abstract deadline
+	+ Add a `rank` based on H-Index from [Computer Science Conferences Rankings][14]
+	+ Add a `note` for additional comments (e.g., "Biennial" or "Doctorial consortium")
 - Send a pull request
 
 ## Resources
 - [Call for Papers Wiki][12]
 - [Conference Rankings][13]
-- [Top Computer Science Conferences (Ranking)][14]
+- [Computer Science Conferences Rankings][14]
 
 ## TODOs
 
 - [ ] Mention email address: sisl.deadlines@gmail.com
 - [ ] Multiple types per conference
+- [x] Add rankings (superscript)
+	- [x] H-Index / CORE rating
 - [ ] Application based indication
-- [ ] Add rankings (subtitle)
-	- [ ] H-Index / CORE rating
 - [x] Full conference name (subtitle)
 - [x] Bold note outside of YML.
 - [x] Abstract deadline under Deadline
 	- [x] Organized by that FIRST then paper deadline
 - [ ] Fix Google calendar integration
+- [x] Combine SISL spreadsheet and wiki
 
 ## Forks & other useful listings
 

@@ -64,7 +64,7 @@
               </div>
               <div class="meta col-xs-12">
                 You can optionally export all deadlines to
-                <a href="https://calendar.google.com/calendar/r?cid={{ site.url }}/sisl-deadlines.ics">Google Calendar</a> or
+                <a href="https://calendar.google.com/calendar/r?cid={{ site.url }}/sisl-deadlines/sisl-deadlines.ics">Google Calendar</a> or
                 <a href="/sisl-deadlines/sisl-deadlines.ics">.ics</a>.
               </div>
             </div>
@@ -73,7 +73,7 @@
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6">
-                  <a class="conf-title" target="_blank" href="{{conf.link}}">{{conf.title}} {{conf.year}}</a>
+                  <a class="conf-title" target="_blank" href="{{conf.link}}">{{conf.title}} {{conf.year}}</a> <sup><a class="conf-rank" target="_blank" href="http://www.guide2research.com/topconf/"></a></sup>
               </div>
               <div class="col-xs-7 col-sm-6">
                 <span class="timer"></span> <sup class="abstract-indication"></sup>
@@ -118,7 +118,7 @@
         </div>
         {% endfor %}
         <footer>
-          <sup>‡</sup> Timer based on abstract deadline.
+          <sup>‡</sup> Indicates that the timer is based on the abstract deadline.
         </footer>
     </div>
     <script type="text/javascript" charset="utf-8">
@@ -218,6 +218,12 @@
           catch(err) {
             console.log("Error converting to local timezone.");
           }
+
+          // Add H-Index rank if applicable
+          if ("{{conf.rank}}" != "") {
+            $('#{{conf.id}} .conf-rank').html("[{{conf.rank}}]");
+          }
+
 
           // add calendar button
           var myCalendar = createCalendar({
