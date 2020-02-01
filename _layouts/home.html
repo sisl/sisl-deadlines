@@ -73,15 +73,18 @@
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6">
-                  <a class="conf-title" href="{{ "/conference" | prepend:site.baseurl }}?id={{ conf.id }}">{{conf.title}} {{conf.year}}</a>
+                  <a class="conf-title" target="_blank" href="{{conf.link}}">{{conf.title}} {{conf.year}}</a>
               </div>
               <div class="col-xs-7 col-sm-6">
-                <span class="timer"></span>
+                <span class="timer"></span> <sup id="abstract-indication"></sup>
               </div>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <div class="meta">
+                <div class="meta">
+                  <span class="conf-fullname">{{conf.fullname}}</span>
+                </div>
                 <span class="conf-date">{{conf.date}}.</span>
                 <span class="conf-place">
                   <a href="http://maps.google.com/?q={{conf.place}}">{{conf.place}}</a>.
@@ -89,13 +92,17 @@
               </div>
               {% if conf.note %}
               <div class="note">
+                <b>Note: </b>
                 {{conf.note}}
               </div>
               {% endif %}
             </div>
             <div class="col-xs-12 col-sm-6">
               <div class="deadline">
-                <div>Deadline:
+                <div id="abstract-deadline"><b>Abstract:</b>
+                  <span class="abstract-time"></span>
+                </div>
+                <div><b>Deadline:</b>
                   <span class="deadline-time"></span>
                 </div>
               </div>
@@ -110,6 +117,9 @@
           <hr>
         </div>
         {% endfor %}
+        <footer>
+          <sup>‡</sup> Timer based on abstract deadline.
+        </footer>
     </div>
     <script type="text/javascript" charset="utf-8">
     $(function() {
@@ -154,16 +164,44 @@
 
         {% for conf in site.data.conferences %}
         $('#{{conf.id}} .conf-sub').html(sub2name["{{conf.sub}}"].toLocaleLowerCase());
-        {% if conf.deadline == "TBA" %}
+        {% if conf.deadline == "TBA" or conf.deadline == "TBD" %}
           $('#{{conf.id}} .timer').html("TBA");
           $('#{{conf.id}} .deadline-time').html("TBA");
+          $('#{{conf.id}} .abstract-time').html("TBA");
         {% else %}
           // adjust date according to deadline timezone
           var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
           var confDate = moment.tz("{{conf.deadline}}", timezone);
+          var abstractDate = moment.tz("{{conf.abstract_deadline}}", timezone);
+
+          var countdownDate = confDate; // Default to paper deadline date
+          var hasAbstract = false;
+          var usingAbstractDate = false;
+
+          // Change to abstract deadline (if applicable)
+          if ("{{conf.abstract_deadline}}" != "") {
+            hasAbstract = true;
+
+            // Check if abstract date has past
+            var today = moment();
+            if (today.diff(abstractDate) < 0) {
+              usingAbstractDate = true;
+              countdownDate = abstractDate;
+            } else {
+              // Abstract date has past (mark it so)
+              $('#{{conf.id}} #abstract-deadline').addClass('abstract-past');
+            }
+          } else {
+            // No abstract date listed (then hide abstract deadline)
+            $('#{{conf.id}} #abstract-deadline').addClass("no-abstract");
+          }
 
           // render countdown timer
-          $('#{{conf.id}} .timer').countdown(confDate.toDate(), function(event) {
+          $('#{{conf.id}} .timer').countdown(countdownDate.toDate(), function(event) {
+            if (usingAbstractDate) {
+              // Indicate that the timer is based on the abstract deadline
+              $('#{{conf.id}} #abstract-indication').html(" ‡")
+            }
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
 
@@ -171,6 +209,11 @@
           try {
             var localConfDate = moment.tz(confDate, local_timezone);
             $('#{{conf.id}} .deadline-time').html(localConfDate.toString());
+            
+            if (hasAbstract) {
+              var localAbstractDate = moment.tz(abstractDate, local_timezone);
+              $('#{{conf.id}} .abstract-time').html(abstractDate.toString());
+            }
           }
           catch(err) {
             console.log("Error converting to local timezone.");

@@ -1,8 +1,8 @@
 ---
-- name: Machine Learning
-  sub: ML
+- name: Artificial Intelligence
+  sub: AI
 - name: Aerospace
-  sub: AERO
+  sub: AA
 - name: Autonomous Driving
   sub: AUTO
 - name: Robotics

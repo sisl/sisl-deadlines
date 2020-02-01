@@ -143,6 +143,18 @@ footer {
   background: #0097e6;
 }
 
+.conf-fullname {
+  font-style: italic;
+}
+
+.abstract-past {
+  text-decoration: line-through;
+}
+
+.no-abstract {
+  display: none;
+}
+
 .checkbox input[type="checkbox"]:checked:after {
   background-color: #0097e6;
   border-color: #0097e6;
@@ -169,6 +181,9 @@ footer {
     display: none;
   }
   .conf-date {
+    display: none;
+  }
+  .conf-fullname {
     display: none;
   }
   .note {

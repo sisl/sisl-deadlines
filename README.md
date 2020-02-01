@@ -14,6 +14,24 @@ To add or update information:
 - Optionally add a `note` and `abstract_deadline` in case the conference has a separate mandatory abstract deadline
 - Send a pull request
 
+## Resources
+- [Call for Papers Wiki][12]
+- [Conference Rankings][13]
+- [Top Computer Science Conferences (Ranking)][14]
+
+## TODOs
+
+- [ ] Mention email address: sisl.deadlines@gmail.com
+- [ ] Multiple types per conference
+- [ ] Application based indication
+- [ ] Add rankings (subtitle)
+	- [ ] H-Index / CORE rating
+- [x] Full conference name (subtitle)
+- [x] Bold note outside of YML.
+- [x] Abstract deadline under Deadline
+	- [x] Organized by that FIRST then paper deadline
+- [ ] Fix Google calendar integration
+
 ## Forks & other useful listings
 
 - [aideadlin.es (original, forked)][2] by @abhshkdz
@@ -38,3 +56,6 @@ To add or update information:
 [9]: https://ekut-es.github.io/es-deadlines/
 [10]: https://jackietseng.github.io/conference_call_for_paper/conferences.html
 [11]: https://github.com/sisl/wiki/wiki/Conferences
+[12]: http://www.wikicfp.com/cfp/home
+[13]: http://www.conferenceranks.com/
+[14]: http://www.guide2research.com/topconf/
