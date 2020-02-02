@@ -2,6 +2,10 @@
 
 Countdown timers to keep track of a bunch of AI/Aerospace/Autonomous Driving/Robotics/Validation conference deadlines relating to research at the Stanford Intelligent Systems Laboratory (SISL).
 
+https://sisl.github.io/sisl-deadlines/
+
+(Alias: http://bit.ly/sisl-deadlines)
+
 ## Adding/updating a conference
 
 Migrating from old SISL conference wiki: [https://github.com/sisl/wiki/wiki/Conferences][11]
