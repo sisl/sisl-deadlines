@@ -156,12 +156,12 @@ footer {
 }
 
 .checkbox input[type="checkbox"]:checked:after {
-  background-color: #0097e6;
-  border-color: #0097e6;
+  background-color: #8c1515; /* #0097e6;*/
+  border-color: #8c1515; /* #0097e6;*/
 }
 
 .checkbox input[type="checkbox"]:after, .checkbox input[type="checkbox"]:focus:after {
-  border-color: #0097e6;
+  border-color: #8c1515; /* #0097e6;*/
 }
 
 @media only screen and (max-width: 780px) {
@@ -204,6 +204,10 @@ footer {
   font-size: 12px;
 }
 
+.reset {
+  font-size: 12px;
+}
+
 .calendar {
   font-size: 12px;
   margin-top: 3px;
@@ -219,4 +223,37 @@ footer {
 
 .calendar img {
   height: 20px;
+}
+
+.btn-sisl {
+  background-color: #8c1515;
+  display: inline-block;
+  zoom: 1;
+  font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+  position: relative;
+  width: 52px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 1px 8px 1px 6px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  top: -2.25px;
+  text-shadow: 0 1px 0 #5e3032;
+}
+
+.btn-sisl:hover {
+  background-color: #5e3032;
+  color: #fff;
+}
+
+.btn-sisl:hover:after {
+  color: #fff;
+}
+
+.btn-sisl:visited {
+  color: #fff;
 }

@@ -1,16 +1,5 @@
 ---
 
-- title: IV
-  fullname: IEEE Intelligent Vehicles Symposium
-  year: 2020
-  id: iv20
-  link: https://2020.ieee-iv.org/
-  date: June 23-26, 2020
-  deadline: '2020-02-01 23:59:59'
-  timezone: America/Los_Angeles
-  place: Las Vegas, Nevada
-  sub: AUTO, AI
-
 - title: ICML
   fullname: International Conference on Machine Learning
   year: 2020
@@ -80,7 +69,7 @@
   timezone: America/New_York
   date: December 8-11, 2020
   place: Jeju Island, Republic of Korea
-  sub: AI, RO
+  sub: RO, AI
 
 - title: AVIATION
   fullname: AIAA AVIATION Forum and Exposition
@@ -299,6 +288,17 @@
   date: July 12-17, 2020
   place: Oregon State University at Corvallis, Oregon
   sub: RO
+
+- title: IV
+  fullname: IEEE Intelligent Vehicles Symposium
+  year: 2020
+  id: iv20
+  link: https://2020.ieee-iv.org/
+  date: June 23-26, 2020
+  deadline: '2020-02-01 23:59:59'
+  timezone: America/Los_Angeles
+  place: Las Vegas, Nevada
+  sub: AUTO, AI
 
 - title: NeurIPS
   fullname: Conference on Neural Information Processing Systems

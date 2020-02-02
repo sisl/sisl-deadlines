@@ -25,7 +25,10 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
                   <h1>
-                    {{ site.title }} <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.description }}{% if site.twitter_hashtag %} #{{ site.twitter_hashtag }}{% endif %}" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    {{ site.title }} 
+                    <a class="btn btn-sisl" href="https://sisl.stanford.edu">
+                      <span>SISL</span>
+                    </a>
                     <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
                   </h1>
                 </div>
@@ -50,6 +53,9 @@
                         </div>
                       </div>
                       {% endfor %}
+                      <div class="col-md-4 col-xs-6">
+                        <a class="reset" style="text-align: left;">Reset</a>
+                      </div>
                     </div>
                   </form>
                 <!-- </div> -->
@@ -117,6 +123,8 @@
         {% endfor %}
         <footer>
           <sup>‡</sup> Indicates that the timer is based on the abstract deadline.
+          <br>
+          <sup>[rank #]</sup> Based on order sorted by <a href="https://en.wikipedia.org/wiki/H-index">H-Index</a> from <a href="http://www.guide2research.com/topconf/" target="_blank">Guide2Research</a>.
         </footer>
     </div>
     <script type="text/javascript" charset="utf-8">
@@ -148,7 +156,6 @@
         catch(err) {
           $('.local-timezone-hide').hide();
         }
-
 
         // Get all subs
         var conf_type_data = {{ site.data.types | jsonify }};
@@ -328,14 +335,23 @@
             }
           }
           subs = [csub];
-          // console.log(subs);
           // Show checked subs
           for (var i = 0; i < subs.length; i++) {
             $('#' + subs[i] + '-checkbox').prop('checked', true);
             $('.' + subs[i] + '-conf').show();
           }
-          store.set('{{ site.domain }}', subs);
-          window.history.pushState('', '', '?sub=' + subs.join());
+        });
+
+        // Event handler on reset click
+        $('.reset').click(function(e) {
+          // Show all subs
+          for (var i = 0; i < all_subs.length; i++) {
+            $('#' + all_subs[i] + '-checkbox').prop('checked', true);
+            $('.' + all_subs[i] + '-conf').show();
+          }
+          subs = all_subs.slice();
+          store.set('{{ site.domain }}', all_subs);
+          window.history.pushState('', '', '?sub=' + all_subs.join());
         });
     });
     <!-- Google analytics -->
