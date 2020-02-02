@@ -8,8 +8,6 @@ https://sisl.github.io/sisl-deadlines/
 
 ## Adding/updating a conference
 
-Migrating from old SISL conference wiki: [https://github.com/sisl/wiki/wiki/Conferences][11]
-
 To add or update information:
 - Fork the repository
 - Update `_data/conferences.yml`
@@ -63,7 +61,6 @@ To add or update information:
 [8]: https://creedai.github.io/ai-deadlines/
 [9]: https://ekut-es.github.io/es-deadlines/
 [10]: https://jackietseng.github.io/conference_call_for_paper/conferences.html
-[11]: https://github.com/sisl/wiki/wiki/Conferences
 [12]: http://www.wikicfp.com/cfp/home
 [13]: http://www.conferenceranks.com/
 [14]: http://www.guide2research.com/topconf/
