@@ -1,6 +1,11 @@
 ## SISL Deadlines [![Build Status](https://travis-ci.com/sisl/sisl-deadlines.svg?branch=gh-pages)](https://travis-ci.com/sisl/sisl-deadlines)
 
-Countdown timers to keep track of a bunch of AI/Aerospace/Autonomous Driving/Robotics/Validation conference deadlines relating to research at the Stanford Intelligent Systems Laboratory (SISL).
+Countdown timers to keep track of conference deadlines relating to research at the [Stanford Intelligent Systems Laboratory (SISL)](http://sisl.stanford.edu/)
+- AI
+- Aerospace
+- Autonomous Driving
+- Robotics
+- Validation
 
 https://sisl.github.io/sisl-deadlines/
 
@@ -13,6 +18,8 @@ To add or update information:
 - Update `_data/conferences.yml`
 - Make sure it has the `title`, `fullname`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
     + See available timezone strings [here](https://momentjs.com/timezone/)
+    + Multiple `sub` attributes can be separated by commas (see [`_data/types.yml`](https://github.com/sisl/sisl-deadlines/blob/gh-pages/_data/types.yml))
+
 - Optionally:
 	+ Add an `abstract_deadline` in case the conference has a separate mandatory abstract deadline
 	+ Add a `rank` based on the H-Index _ordering_ from [Computer Science Conferences Rankings][14]
@@ -25,19 +32,16 @@ To add or update information:
 - [Conference Rankings][13]
 - [Computer Science Conferences Rankings][14]
 
-## TODOs
+## Changes
 
-- [ ] Mention email address: sisl.deadlines@gmail.com
-- [ ] Multiple types per conference
-- [x] Add rankings (superscript)
-	- [x] H-Index / CORE rating
-- [ ] Application based indication
-- [x] Full conference name (subtitle)
-- [x] Bold note outside of YML.
-- [x] Abstract deadline under Deadline
-	- [x] Organized by that FIRST then paper deadline
-- [x] Fix Google calendar integration
-- [x] Combine SISL spreadsheet and wiki
+- [x] Full conference name (`fullname`: _italicized subtitle_)
+- [x] Multiple types per conference (e.g., '`sub: AUTO, AI`')
+- [x] Added rankings <sup>[superscript]</sup>
+	- [x] H-Index / CORE rating from [Computer Science Conferences Rankings][14]
+- [x] Sorted by abstract deadline
+- [x] Link directly to conference website
+- [x] Combined SISL spreadsheet and wiki
+- [x] Conference newsletter email address: sisl.deadlines@gmail.com
 
 ## Forks & other useful listings
 

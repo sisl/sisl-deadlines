@@ -9,7 +9,7 @@
   deadline: '2020-02-01 23:59:59'
   timezone: America/Los_Angeles
   place: Las Vegas, Nevada
-  sub: AUTO
+  sub: AUTO, AI
 
 - title: ICML
   fullname: International Conference on Machine Learning
@@ -56,7 +56,7 @@
   deadline: '2020-03-02 23:59:59'
   timezone: America/Los_Angeles
   place: Rhodes, Greece
-  sub: AUTO
+  sub: AUTO, AI
 
 - title: DASC
   fullname: AIAA/IEEE Digital Avionics Systems Conference
@@ -80,7 +80,7 @@
   timezone: America/New_York
   date: December 8-11, 2020
   place: Jeju Island, Republic of Korea
-  sub: AI
+  sub: AI, RO
 
 - title: AVIATION
   fullname: AIAA AVIATION Forum and Exposition
@@ -102,7 +102,7 @@
   timezone: UTC-7
   date: October 30 - November 1, 2019
   place: Osaka, Japan
-  sub: RO
+  sub: RO, AI
 
 - title: IAAI
   fullname: AAAI Conference on Innovative Applications of Artificial Intelligence
@@ -199,7 +199,7 @@
   timezone: UTC-12
   date: May 9-13, 2020
   place: Auckland, New Zealand
-  sub: RO
+  sub: RO, AI
   note: Doctoral consortium
 
 - title: ICAPS
@@ -250,7 +250,7 @@
   deadline: '2019-12-30 23:59:59'
   timezone: UTC-12
   place: Las Vegas, Nevada
-  sub: RO
+  sub: RO, AI
 
 - title: IJCAI
   fullname: International Joint Conference on Artificial Intelligence

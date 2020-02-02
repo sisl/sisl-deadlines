@@ -70,7 +70,7 @@
             </div>
         </div>
         {% for conf in site.data.conferences %}
-        <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
+        <div id="{{conf.id}}">
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6 conf-title-box">
                   <a class="conf-title" target="_blank" href="{{conf.link}}">{{conf.title}} {{conf.year}}</a> <sup><a class="conf-rank" target="_blank" href="http://www.guide2research.com/topconf/"></a></sup>
@@ -110,9 +110,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12">
-              <span title="Click to only show {{conf.sub}} conferences" data-sub="{{conf.sub}}" class="conf-sub"></span>
-            </div>
+            <div class="col-xs-12 conf-subs"></div>
           </div>
           <hr>
         </div>
@@ -163,7 +161,14 @@
         }
 
         {% for conf in site.data.conferences %}
-        $('#{{conf.id}} .conf-sub').html(sub2name["{{conf.sub}}"].toLocaleLowerCase());
+          // Handle multiple subjects
+          var subs = "{{conf.sub}}";
+          subs = subs.toUpperCase().split(',');
+          subs.forEach(function(sub) {
+            sub = sub.trim();
+            $("#{{conf.id}}").addClass(sub + "-conf");
+            $('#{{conf.id}} .conf-subs').append("<span title='Click to only show " + sub + " conferences' data-sub='" + sub + "' class='conf-sub'>" + sub2name[sub].toLocaleLowerCase() + "</span>\n");
+          });
         {% if conf.deadline == "TBA" or conf.deadline == "TBD" %}
           $('#{{conf.id}} .timer').html("TBA");
           $('#{{conf.id}} .deadline-time').html("TBA");
@@ -278,6 +283,10 @@
             $('.' + all_subs[i] + '-conf').hide();
           }
         }
+        // Show checked subs
+        for (var i = 0; i < subs.length; i++) {
+          $('.' + subs[i] + '-conf').show();
+        }
         store.set('{{ site.domain }}', subs);
         window.history.pushState('', '', '?sub=' + subs.join());
 
@@ -297,7 +306,10 @@
             if (idx >= 0)
               subs.splice(idx, 1);
           }
-          console.log(subs);
+          // Show checked subs
+          for (var i = 0; i < subs.length; i++) {
+            $('.' + subs[i] + '-conf').show();
+          }
           store.set('{{ site.domain }}', subs);
           window.history.pushState('', '', '?sub=' + subs.join());
         });
@@ -316,7 +328,12 @@
             }
           }
           subs = [csub];
-          console.log(subs);
+          // console.log(subs);
+          // Show checked subs
+          for (var i = 0; i < subs.length; i++) {
+            $('#' + subs[i] + '-checkbox').prop('checked', true);
+            $('.' + subs[i] + '-conf').show();
+          }
           store.set('{{ site.domain }}', subs);
           window.history.pushState('', '', '?sub=' + subs.join());
         });
