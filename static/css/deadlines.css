@@ -200,6 +200,10 @@ footer {
 
 .reset {
   font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  color: inherit;
+  cursor: pointer;
 }
 
 .calendar {
