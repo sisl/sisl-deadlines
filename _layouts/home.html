@@ -34,8 +34,7 @@
                 </div>
                 <div class="meta col-xs-12">
                   {{ site.description }}.
-                  <br>
-                  To add/edit a conference, <a target="_blank" href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>.
+                  To add/edit a conference, <a target="_blank" href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>. Shortlink at <a href="https://bit.ly/sisl-deadlines">bit.ly/sisl-deadlines</a>.
                 </div>
             </div>
             <br>
@@ -108,7 +107,7 @@
                 <div class="abstract-deadline"><b>Abstract:</b>
                   <span class="abstract-time"></span>
                 </div>
-                <div><b>Deadline:</b>
+                <div class="final-deadline"><b>Deadline:</b>
                   <span class="deadline-time"></span>
                 </div>
               </div>
@@ -201,7 +200,7 @@
               countdownDate = abstractDate;
             } else {
               // Abstract date has past (mark it so)
-              $('#{{conf.id}} .abstract-deadline').addClass('abstract-past');
+              $('#{{conf.id}} .abstract-deadline').addClass('deadline-past');
             }
           } else {
             // No abstract date listed (then hide abstract deadline)
@@ -260,8 +259,10 @@
 
           // check if date has passed, add 'past' class to it
           var today = moment();
-          if (today.diff(confDate) > 0)
+          if (today.diff(confDate) > 0){
             $('#{{conf.id}}').addClass('past');
+            $('#{{conf.id}} .final-deadline').addClass('deadline-past');
+          }
         {% endif %}
         {% endfor %}
 

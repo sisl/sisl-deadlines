@@ -147,7 +147,7 @@ footer {
   font-style: italic;
 }
 
-.abstract-past {
+.deadline-past {
   text-decoration: line-through;
 }
 
@@ -177,20 +177,14 @@ footer {
   #conf-timer {
     font-size: 36px;
   }
-  .conf-place {
-    display: none;
-  }
-  .conf-date {
-    display: none;
-  }
   .conf-title-box {
     padding-right: 2px;
   }
-  .note {
-    display: none;
-  }
   .conf-row {
     margin-bottom: 7px;
+  }
+  .note {
+    margin-bottom: 0px;
   }
 }
 
