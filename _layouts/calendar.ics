@@ -12,10 +12,12 @@ UID:{{ conf.id }}-abstract {% if conf.timezone contains "UTC" %} {% assign tz = 
 ORGANIZER:sisl.deadlines@gmail.com
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 DTSTART;TZID=Etc/GMT{{ tz }}:{{ conf.abstract_deadline | date: "%Y%m%dT%H%M%S" }}
+DESCRIPTION:{{ conf.fullname }}
 {% else %}
 ORGANIZER:sisl.deadlines@gmail.com
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 DTSTART;TZID={{ conf.timezone }}:{{ conf.abstract_deadline | date: "%Y%m%dT%H%M%S" }}
+DESCRIPTION:{{ conf.fullname }}
 {% endif %}END:VEVENT{% endif %}
 {% if conf.deadline != "TBA" and conf.deadline != "TBD" %}BEGIN:VEVENT
 SUMMARY:{{ conf.title }} {{ conf.year }} deadline
@@ -23,10 +25,12 @@ UID:{{ conf.id }} {% if conf.timezone contains "UTC" %} {% assign tz = conf.time
 ORGANIZER:sisl.deadlines@gmail.com
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 DTSTART;TZID=Etc/GMT{{ tz }}:{{ conf.deadline | date: "%Y%m%dT%H%M%S" }}
+DESCRIPTION:{{ conf.fullname }}
 {% else %}
 ORGANIZER:sisl.deadlines@gmail.com
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 DTSTART;TZID={{ conf.timezone }}:{{ conf.deadline | date: "%Y%m%dT%H%M%S" }}
+DESCRIPTION:{{ conf.fullname }}
 {% endif %}END:VEVENT
 {% endif %}
 {%- endfor -%}END:VCALENDAR
