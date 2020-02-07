@@ -1,18 +1,5 @@
 ---
 
-- title: ICML
-  fullname: International Conference on Machine Learning
-  year: 2020
-  id: icml20
-  link: https://icml.cc/Conferences/2020
-  rank: 4
-  abstract_deadline: '2020-01-30 23:59:00'
-  deadline: '2020-02-06 23:59:00'
-  timezone: UTC-12
-  date: July 12-18, 2020
-  place: Vienna, Austria
-  sub: AI
-
 - title: UAI
   fullname: Conference on Uncertainty in Artificial Intelligence
   year: 2020
@@ -299,6 +286,19 @@
   timezone: America/Los_Angeles
   place: Las Vegas, Nevada
   sub: AUTO, AI
+
+- title: ICML
+  fullname: International Conference on Machine Learning
+  year: 2020
+  id: icml20
+  link: https://icml.cc/Conferences/2020
+  rank: 4
+  abstract_deadline: '2020-01-30 23:59:00'
+  deadline: '2020-02-06 23:59:00'
+  timezone: UTC-12
+  date: July 12-18, 2020
+  place: Vienna, Austria
+  sub: AI
 
 - title: NeurIPS
   fullname: Conference on Neural Information Processing Systems
