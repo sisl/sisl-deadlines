@@ -23,6 +23,18 @@
   place: Santa Clara, California
   sub: AI
 
+- title: IROS
+  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  year: 2020
+  id: iros20
+  link: http://www.iros2020.org/
+  rank: 31
+  date: October 25-29, 2020
+  deadline: '2020-03-01 23:59:59'
+  timezone: UTC-12
+  place: Las Vegas, Nevada
+  sub: RO, AI
+
 - title: ITSC
   fullname: IEEE International Conference on Intelligent Transportation Systems
   year: 2020
@@ -215,18 +227,6 @@
   timezone: UTC-12
   place: NASA Ames, Moffett Field, California
   sub: VV
-
-- title: IROS
-  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
-  year: 2020
-  id: iros20
-  link: http://www.iros2020.org/
-  rank: 31
-  date: October 25-29, 2020
-  deadline: '2019-12-30 23:59:59'
-  timezone: UTC-12
-  place: Las Vegas, Nevada
-  sub: RO, AI
 
 - title: IJCAI
   fullname: International Joint Conference on Artificial Intelligence
