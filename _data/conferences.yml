@@ -81,6 +81,18 @@
   place: Reno, Nevada
   sub: AA
 
+- title: SciTech
+  fullname: AIAA SciTech Forum and Exposition
+  year: 2021
+  id: scitech21
+  link: https://www.aiaa.org/SciTech
+  date: January 11-15, 2021
+  abstract_deadline: '2020-06-08 20:00:00'
+  deadline: '2020-06-08 20:00:00'
+  timezone: America/New_York
+  place: Nashville, Tennessee
+  sub: AA
+
 - title: CoRL
   fullname: Conference on Robot Learning
   year: 2019
@@ -331,18 +343,6 @@
   date: TBD
   deadline: TBD
   place: TBD
-  sub: AA
-
-- title: SciTech
-  fullname: AIAA SciTech Forum and Exposition
-  year: 2021
-  id: scitech21
-  link: https://www.aiaa.org/SciTech
-  date: January 11-15, 2021
-  abstract_deadline: TBD
-  deadline: TBD
-  timezone: America/New_York
-  place: Nashville, Tennessee
   sub: AA
 
 - title: ATM Seminar
