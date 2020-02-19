@@ -24,7 +24,7 @@ To add or update information:
 	+ Add an `abstract_deadline` in case the conference has a separate mandatory abstract deadline
 	+ Add a `rank` based on the H-Index _ordering_ from [Computer Science Conferences Rankings][14]
 	+ Add a `note` for additional comments (e.g., "Biennial" or "Doctorial consortium")
-- Run `update.sh` which sorts conferences by deadline, verifies the YML file, and updates the .ics calendar file
+- Run `update.bat` which sorts conferences by deadline, verifies the YML file, and updates the .ics calendar file
 - Send a pull request
 
 ## Resources
