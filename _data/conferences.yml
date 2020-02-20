@@ -7,7 +7,7 @@
   link: http://auai.org/uai2020/
   rank: 103
   deadline: '2020-02-20 23:59:59'
-  timezone: America/New_York
+  timezone: UTC+1
   date: August 3-6, 2020
   place: Toronto, Canada
   sub: AI
@@ -31,7 +31,7 @@
   rank: 31
   date: October 25-29, 2020
   deadline: '2020-03-01 23:59:59'
-  timezone: UTC-12
+  timezone: America/Los_Angeles
   place: Las Vegas, Nevada
   sub: RO, AI
 
@@ -69,6 +69,19 @@
   date: December 8-11, 2020
   place: Jeju Island, Republic of Korea
   sub: RO, AI
+
+- title: NeurIPS
+  fullname: Conference on Neural Information Processing Systems
+  year: 2020
+  id: neurips20
+  link: https://neurips.cc/Conferences/2020/Dates
+  rank: 2
+  deadline: '2020-05-12 13:00:00'
+  abstract_deadline: '2020-05-05 13:00:00'
+  timezone: America/Los_Angeles
+  date: December 6-12, 2020
+  place: Vancouver Convention Centre, Canada
+  sub: AI
 
 - title: AVIATION
   fullname: AIAA AVIATION Forum and Exposition
@@ -310,19 +323,6 @@
   timezone: UTC-12
   date: July 12-18, 2020
   place: Vienna, Austria
-  sub: AI
-
-- title: NeurIPS
-  fullname: Conference on Neural Information Processing Systems
-  year: 2020
-  id: neurips20
-  link: https://neurips.cc/Conferences/2020/Dates
-  rank: 2
-  deadline: TBD
-  abstract_deadline: TBD
-  timezone: America/Los_Angeles
-  date: December 6-12, 2020
-  place: Vancouver Convention Centre, Canada
   sub: AI
 
 - title: AIAA Space

@@ -223,7 +223,7 @@
             
             if (hasAbstract) {
               var localAbstractDate = moment.tz(abstractDate, local_timezone);
-              $('#{{conf.id}} .abstract-time').html(abstractDate.toString());
+              $('#{{conf.id}} .abstract-time').html(localAbstractDate.toString());
             }
           }
           catch(err) {
