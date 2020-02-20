@@ -70,6 +70,19 @@
   place: Jeju Island, Republic of Korea
   sub: RO, AI
 
+- title: NeurIPS
+  fullname: Conference on Neural Information Processing Systems
+  year: 2020
+  id: neurips20
+  link: https://neurips.cc/Conferences/2020/Dates
+  rank: 2
+  deadline: '2020-05-12 13:00:00'
+  abstract_deadline: '2020-05-05 13:00:00'
+  timezone: America/Los_Angeles
+  date: December 6-12, 2020
+  place: Vancouver Convention Centre, Canada
+  sub: AI
+
 - title: AVIATION
   fullname: AIAA AVIATION Forum and Exposition
   year: 2020
@@ -310,19 +323,6 @@
   timezone: UTC-12
   date: July 12-18, 2020
   place: Vienna, Austria
-  sub: AI
-
-- title: NeurIPS
-  fullname: Conference on Neural Information Processing Systems
-  year: 2020
-  id: neurips20
-  link: https://neurips.cc/Conferences/2020/Dates
-  rank: 2
-  deadline: '2020-05-12 13:00:00'
-  abstract_deadline: '2020-05-05 13:00:00'
-  timezone: America/Los_Angeles
-  date: December 6-12, 2020
-  place: Vancouver Convention Centre, Canada
   sub: AI
 
 - title: AIAA Space
