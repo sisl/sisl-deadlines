@@ -1,16 +1,5 @@
 ---
 
-- title: OpML
-  fullname: USENIX Conference on Operational Machine Learning
-  year: 2020
-  id: opml20
-  link: https://www.usenix.org/conference/opml20
-  date: May 1, 2020
-  deadline: '2020-02-25 17:00:00'
-  timezone: America/Los_Angeles
-  place: Santa Clara, California
-  sub: AI
-
 - title: IROS
   fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
   year: 2020
@@ -323,6 +312,17 @@
   timezone: UTC+1
   date: August 3-6, 2020
   place: Toronto, Canada
+  sub: AI
+
+- title: OpML
+  fullname: USENIX Conference on Operational Machine Learning
+  year: 2020
+  id: opml20
+  link: https://www.usenix.org/conference/opml20
+  date: May 1, 2020
+  deadline: '2020-02-25 17:00:00'
+  timezone: America/Los_Angeles
+  place: Santa Clara, California
   sub: AI
 
 - title: AIAA Space
