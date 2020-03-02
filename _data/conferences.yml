@@ -1,28 +1,5 @@
 ---
 
-- title: IROS
-  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
-  year: 2020
-  id: iros20
-  link: http://www.iros2020.org/
-  rank: 31
-  date: October 25-29, 2020
-  deadline: '2020-03-01 23:59:59'
-  timezone: America/Los_Angeles
-  place: Las Vegas, Nevada
-  sub: RO, AI
-
-- title: ITSC
-  fullname: IEEE International Conference on Intelligent Transportation Systems
-  year: 2020
-  id: itsc20
-  link: https://www.ieee-itsc2020.org/
-  date: September 20-23, 2020
-  deadline: '2020-03-02 23:59:59'
-  timezone: America/Los_Angeles
-  place: Rhodes, Greece
-  sub: AUTO, AI
-
 - title: DASC
   fullname: AIAA/IEEE Digital Avionics Systems Conference
   year: 2020
@@ -35,6 +12,17 @@
   place: San Antonio, Texas
   sub: AA
   note: Final paper due July 17 if no editorial review is requested
+
+- title: ITSC
+  fullname: IEEE International Conference on Intelligent Transportation Systems
+  year: 2020
+  id: itsc20
+  link: https://www.ieee-itsc2020.org/
+  date: September 20-23, 2020
+  deadline: '2020-03-08 23:59:59'
+  timezone: America/Los_Angeles
+  place: Rhodes, Greece
+  sub: AUTO, AI
 
 - title: CDC
   fullname: IEEE Conference on Decision and Control
@@ -324,6 +312,18 @@
   timezone: America/Los_Angeles
   place: Santa Clara, California
   sub: AI
+
+- title: IROS
+  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  year: 2020
+  id: iros20
+  link: http://www.iros2020.org/
+  rank: 31
+  date: October 25-29, 2020
+  deadline: '2020-03-01 23:59:59'
+  timezone: America/Los_Angeles
+  place: Las Vegas, Nevada
+  sub: RO, AI
 
 - title: AIAA Space
   fullname: AIAA Space and Astronautics Forum and Exposition
