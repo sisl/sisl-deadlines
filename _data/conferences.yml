@@ -1,18 +1,5 @@
 ---
 
-- title: DASC
-  fullname: AIAA/IEEE Digital Avionics Systems Conference
-  year: 2020
-  id: dasc20
-  link: https://2020.dasconline.org/
-  date: October 11-15, 2020
-  abstract_deadline: '2020-03-06 23:59:59'
-  deadline: '2020-05-22 23:59:59'
-  timezone: America/Los_Angeles
-  place: San Antonio, Texas
-  sub: AA
-  note: Final paper due July 17 if no editorial review is requested
-
 - title: ITSC
   fullname: IEEE International Conference on Intelligent Transportation Systems
   year: 2020
@@ -58,6 +45,19 @@
   timezone: America/New_York
   place: Reno, Nevada
   sub: AA
+
+- title: DASC
+  fullname: AIAA/IEEE Digital Avionics Systems Conference
+  year: 2020
+  id: dasc20
+  link: https://2020.dasconline.org/
+  date: October 11-15, 2020
+  abstract_deadline: '2020-03-06 23:59:59'
+  deadline: '2020-05-22 23:59:59'
+  timezone: America/Los_Angeles
+  place: San Antonio, Texas
+  sub: AA
+  note: Final paper due July 17 if no editorial review is requested
 
 - title: SciTech
   fullname: AIAA SciTech Forum and Exposition
