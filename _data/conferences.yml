@@ -1,16 +1,5 @@
 ---
 
-- title: ITSC
-  fullname: IEEE International Conference on Intelligent Transportation Systems
-  year: 2020
-  id: itsc20
-  link: https://www.ieee-itsc2020.org/
-  date: September 20-23, 2020
-  deadline: '2020-03-08 23:59:59'
-  timezone: America/Los_Angeles
-  place: Rhodes, Greece
-  sub: AUTO, AI
-
 - title: CDC
   fullname: IEEE Conference on Decision and Control
   year: 2020
@@ -324,6 +313,17 @@
   timezone: America/Los_Angeles
   place: Las Vegas, Nevada
   sub: RO, AI
+
+- title: ITSC
+  fullname: IEEE International Conference on Intelligent Transportation Systems
+  year: 2020
+  id: itsc20
+  link: https://www.ieee-itsc2020.org/
+  date: September 20-23, 2020
+  deadline: '2020-03-08 23:59:59'
+  timezone: America/Los_Angeles
+  place: Rhodes, Greece
+  sub: AUTO, AI
 
 - title: AIAA Space
   fullname: AIAA Space and Astronautics Forum and Exposition
