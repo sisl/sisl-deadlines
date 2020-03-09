@@ -73,13 +73,13 @@
 
 - title: CoRL
   fullname: Conference on Robot Learning
-  year: 2019
-  id: corl19
+  year: 2020
+  id: corl20
   link: http://www.robot-learning.org
-  deadline: '2019-07-07 23:59:59'
+  deadline: '2020-07-07 23:59:59'
   timezone: UTC-7
-  date: October 30 - November 1, 2019
-  place: Osaka, Japan
+  date: Novemeber 14 - November 16, 2020
+  place: Cambridge, MA, USA
   sub: RO, AI
 
 - title: IAAI
