@@ -1,29 +1,5 @@
 ---
 
-- title: NeurIPS
-  fullname: Conference on Neural Information Processing Systems
-  year: 2020
-  id: neurips20
-  link: https://neurips.cc/Conferences/2020/Dates
-  rank: 2
-  deadline: '2020-05-12 13:00:00'
-  abstract_deadline: '2020-05-05 13:00:00'
-  timezone: America/Los_Angeles
-  date: December 6-12, 2020
-  place: Vancouver Convention Centre, Canada
-  sub: AI
-
-- title: AVIATION
-  fullname: AIAA AVIATION Forum and Exposition
-  year: 2020
-  id: aviation20
-  link: https://www.aiaa.org/aviation
-  date: June 15-19, 2020
-  deadline: '2020-05-14 20:00:00'
-  timezone: America/New_York
-  place: Reno, Nevada
-  sub: AA
-
 - title: DASC
   fullname: AIAA/IEEE Digital Avionics Systems Conference
   year: 2020
@@ -31,7 +7,7 @@
   link: https://2020.dasconline.org/
   date: October 11-15, 2020
   abstract_deadline: '2020-03-06 23:59:59'
-  deadline: '2020-05-22 23:59:59'
+  deadline: '2020-07-17 23:59:59'
   timezone: America/Los_Angeles
   place: San Antonio, Texas
   sub: AA
@@ -48,17 +24,6 @@
   timezone: America/New_York
   place: Nashville, Tennessee
   sub: AA
-
-- title: CoRL
-  fullname: Conference on Robot Learning
-  year: 2020
-  id: corl20
-  link: http://www.robot-learning.org
-  deadline: '2020-07-07 23:59:59'
-  timezone: UTC-7
-  date: Novemeber 14 - November 16, 2020
-  place: Cambridge, MA, USA
-  sub: RO, AI
 
 - title: IAAI
   fullname: AAAI Conference on Innovative Applications of Artificial Intelligence
@@ -323,6 +288,41 @@
   timezone: America/New_York
   date: December 8-11, 2020
   place: Jeju Island, Republic of Korea
+  sub: RO, AI
+
+- title: NeurIPS
+  fullname: Conference on Neural Information Processing Systems
+  year: 2020
+  id: neurips20
+  link: https://neurips.cc/Conferences/2020/Dates
+  rank: 2
+  deadline: '2020-05-12 13:00:00'
+  abstract_deadline: '2020-05-05 13:00:00'
+  timezone: America/Los_Angeles
+  date: December 6-12, 2020
+  place: Vancouver Convention Centre, Canada
+  sub: AI
+
+- title: AVIATION
+  fullname: AIAA AVIATION Forum and Exposition
+  year: 2020
+  id: aviation20
+  link: https://www.aiaa.org/aviation
+  date: June 15-19, 2020
+  deadline: '2020-05-14 20:00:00'
+  timezone: America/New_York
+  place: Reno, Nevada
+  sub: AA
+
+- title: CoRL
+  fullname: Conference on Robot Learning
+  year: 2020
+  id: corl20
+  link: http://www.robot-learning.org
+  deadline: '2020-07-07 23:59:59'
+  timezone: UTC-7
+  date: Novemeber 14 - November 16, 2020
+  place: Cambridge, MA, USA
   sub: RO, AI
 
 - title: AIAA Space
