@@ -49,6 +49,17 @@
   place: Los Angeles, California
   sub: VV
 
+- title: IV
+  fullname: IEEE Intelligent Vehicles Symposium
+  year: 2021
+  id: iv21
+  link: https://2021.ieee-iv.org/
+  date: July 11-15, 2021
+  deadline: '2021-02-01 23:59:59'
+  timezone: America/Los_Angeles
+  place: Nagoya University, Nagoya, Japan
+  sub: AUTO, AI
+
 - title: UAI
   fullname: Conference on Uncertainty in Artificial Intelligence
   year: 2021
@@ -164,17 +175,6 @@
   timezone: UTC-12
   place: NASA Ames, Moffett Field, California
   sub: VV
-
-- title: IV
-  fullname: IEEE Intelligent Vehicles Symposium
-  year: 2021
-  id: iv21
-  link: https://2021.ieee-iv.org/
-  date: July 11-15, 2021
-  deadline: '2020-02-01 23:59:59'
-  timezone: America/Los_Angeles
-  place: Nagoya University, Nagoya, Japan
-  sub: AUTO, AI
 
 - title: OpML
   fullname: USENIX Conference on Operational Machine Learning
