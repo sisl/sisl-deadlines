@@ -5,6 +5,8 @@
   sub: AA
 - name: Autonomous Driving
   sub: AUTO
+- name: Machine Learning
+  sub: ML
 - name: Robotics
   sub: RO
 - name: Validation

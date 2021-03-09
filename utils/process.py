@@ -107,7 +107,6 @@ with open("../_data/conferences.yml", 'r') as stream:
             else:
                 dl = x['deadline']
             return dl
-
         data = yaml.load(stream, Loader=Loader)
         print("Initial Sorting:")
         for q in data:
@@ -142,8 +141,7 @@ with open("../_data/conferences.yml", 'r') as stream:
                     explicit_start=True).splitlines():
                 outfile.write(line.replace('- title:', '\n- title:'))
                 outfile.write('\n')
+        # Replace conference.yml file
+        copyfile('sorted_data.yml', '../_data/conferences.yml')
     except yaml.YAMLError as exc:
         print(exc)
-
-# Replace conference.yml file
-copyfile('sorted_data.yml', '../_data/conferences.yml')
