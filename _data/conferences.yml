@@ -12,101 +12,6 @@
   sub: AI
   note: Doctoral consortium
 
-- title: L4DC
-  fullname: Learning for Dynamics & Control Conference
-  year: 2022
-  id: l4dc22
-  link: https://l4dc.su.domains
-  deadline: '2021-11-30 17:00:00'
-  timezone: America/New_York
-  date: October 23-27, 2022
-  place: Kyoto, Japan
-  sub: RO
-
-- title: SciTech
-  fullname: AIAA SciTech Forum and Exposition
-  year: 2022
-  id: scitech22
-  link: https://www.aiaa.org/SciTech
-  date: January 3-7, 2022
-  abstract_deadline: '2021-06-01 20:00:00'
-  deadline: '2021-12-02 20:00:00'
-  timezone: America/New_York
-  place: San Diego, CA
-  sub: AA
-
-- title: NFM
-  fullname: NASA Formal Methods Symposium
-  year: 2022
-  id: nfm22
-  link: https://shemesh.larc.nasa.gov/nfm2022/
-  date: May 24-27, 2022
-  abstract_deadline: '2021-12-3 23:59:59'
-  deadline: '2021-12-10 23:59:59'
-  timezone: America/Los_Angeles
-  place: Caltech, Pasadena, California
-  sub: VV
-
-- title: ICAPS
-  fullname: International Conference on Automated Planning and Scheduling
-  hindex: 28
-  year: 2022
-  id: icaps22
-  link: http://icaps22.icaps-conference.org
-  deadline: '2021-12-15 23:59:59'
-  abstract_deadline: '2021-12-10 23:59:59'
-  timezone: UTC-12
-  date: June 19-24, 2022
-  place: Singapore Management University, Singapore
-  sub: ML
-  note: Mandatory abstract deadline on Dec 10, 2021. Doctoral consortium
-
-- title: CAV
-  fullname: International Conference on Computer-Aided Verification
-  year: 2022
-  id: cav22
-  link: http://i-cav.org/2022/
-  rank: 83
-  date: August 7-10, 2022
-  deadline: '2022-01-21 23:59:59'
-  timezone: UTC-12
-  place: Technion, Haifa, Israel
-  sub: VV
-
-- title: IV
-  fullname: IEEE Intelligent Vehicles Symposium
-  year: 2022
-  id: iv22
-  link: https://iv2022.com
-  date: June 5-9, 2022
-  deadline: '2022-02-01 23:59:59'
-  timezone: America/Los_Angeles
-  place: Aachen, Germany
-  sub: AUTO, AI
-
-- title: CCTA
-  fullname: Conference on Control Technology and Applications
-  year: 2022
-  id: ccta22
-  link: https://ccta2022.ieeecss.org
-  deadline: '2022-02-01 23:59:59'
-  timezone: UTC-12
-  date: August 23-25, 2022
-  place: Trieste, Italy
-  sub: RO
-
-- title: IROS
-  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
-  hindex: 58
-  year: 2022
-  id: iros2s
-  link: https://iros2022.org
-  deadline: '2022-03-01 23:59:59'
-  timezone: America/Los_Angeles
-  date: October 23-27, 2022
-  place: Kyoto, Japan
-  sub: RO
-
 - title: CoRL
   fullname: Conference on Robot Learning
   year: 2021
@@ -289,6 +194,101 @@
   timezone: UTC-12
   place: Munich, Germany
   sub: VV
+
+- title: L4DC
+  fullname: Learning for Dynamics & Control Conference
+  year: 2022
+  id: l4dc22
+  link: https://l4dc.su.domains
+  deadline: '2021-11-30 17:00:00'
+  timezone: America/New_York
+  date: October 23-27, 2022
+  place: Kyoto, Japan
+  sub: RO
+
+- title: SciTech
+  fullname: AIAA SciTech Forum and Exposition
+  year: 2022
+  id: scitech22
+  link: https://www.aiaa.org/SciTech
+  date: January 3-7, 2022
+  abstract_deadline: '2021-06-01 20:00:00'
+  deadline: '2021-12-02 20:00:00'
+  timezone: America/New_York
+  place: San Diego, CA
+  sub: AA
+
+- title: NFM
+  fullname: NASA Formal Methods Symposium
+  year: 2022
+  id: nfm22
+  link: https://shemesh.larc.nasa.gov/nfm2022/
+  date: May 24-27, 2022
+  abstract_deadline: '2021-12-3 23:59:59'
+  deadline: '2021-12-10 23:59:59'
+  timezone: America/Los_Angeles
+  place: Caltech, Pasadena, California
+  sub: VV
+
+- title: ICAPS
+  fullname: International Conference on Automated Planning and Scheduling
+  hindex: 28
+  year: 2022
+  id: icaps22
+  link: http://icaps22.icaps-conference.org
+  deadline: '2021-12-15 23:59:59'
+  abstract_deadline: '2021-12-10 23:59:59'
+  timezone: UTC-12
+  date: June 19-24, 2022
+  place: Singapore Management University, Singapore
+  sub: ML
+  note: Mandatory abstract deadline on Dec 10, 2021. Doctoral consortium
+
+- title: CAV
+  fullname: International Conference on Computer-Aided Verification
+  year: 2022
+  id: cav22
+  link: http://i-cav.org/2022/
+  rank: 83
+  date: August 7-10, 2022
+  deadline: '2022-01-21 23:59:59'
+  timezone: UTC-12
+  place: Technion, Haifa, Israel
+  sub: VV
+
+- title: IV
+  fullname: IEEE Intelligent Vehicles Symposium
+  year: 2022
+  id: iv22
+  link: https://iv2022.com
+  date: June 5-9, 2022
+  deadline: '2022-02-01 23:59:59'
+  timezone: America/Los_Angeles
+  place: Aachen, Germany
+  sub: AUTO, AI
+
+- title: CCTA
+  fullname: Conference on Control Technology and Applications
+  year: 2022
+  id: ccta22
+  link: https://ccta2022.ieeecss.org
+  deadline: '2022-02-01 23:59:59'
+  timezone: UTC-12
+  date: August 23-25, 2022
+  place: Trieste, Italy
+  sub: RO
+
+- title: IROS
+  fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  hindex: 58
+  year: 2022
+  id: iros2s
+  link: https://iros2022.org
+  deadline: '2022-03-01 23:59:59'
+  timezone: America/Los_Angeles
+  date: October 23-27, 2022
+  place: Kyoto, Japan
+  sub: RO
 
 - title: AIAA Space
   fullname: AIAA Space and Astronautics Forum and Exposition
