@@ -73,16 +73,16 @@
 - title: NeurIPS
   fullname: Conference on Neural Information Processing Systems
   hindex: 198
-  year: 2021
-  id: neurips21
-  link: https://neurips.cc/Conferences/2021/
-  deadline: '2021-05-26 13:00:00'
-  abstract_deadline: '2021-05-19 13:00:00'
+  year: 2022
+  id: neurips22
+  link: https://nips.cc/Conferences/2022
+  deadline: '2022-05-19 13:00:00'
+  abstract_deadline: '2022-05-16 13:00:00'
   timezone: America/Los_Angeles
-  date: December 5-14, 2021
-  place: Online
+  date: November 28 - December 9, 2022
+  place: Hybrid - Online/New Orleans, LA
   sub: ML
-  note: '<b>NOTE</b>: Mandatory abstract deadline on May 19, 2021'
+  note: '<b>NOTE</b>: Mandatory abstract deadline on May 16, 2022'
 
 - title: AAAI
   fullname: AAAI Conference on Artificial Intelligence
@@ -208,14 +208,14 @@
 
 - title: SciTech
   fullname: AIAA SciTech Forum and Exposition
-  year: 2022
-  id: scitech22
+  year: 2023
+  id: scitech23
   link: https://www.aiaa.org/SciTech
-  date: January 3-7, 2022
-  abstract_deadline: '2021-06-01 20:00:00'
-  deadline: '2021-12-02 20:00:00'
+  date: January 23-27, 2023
+  abstract_deadline: '2022-06-01 20:00:00'
+  deadline: '2022-12-05 20:00:00'
   timezone: America/New_York
-  place: San Diego, CA
+  place: National Harbor, MD and Online
   sub: AA
 
 - title: NFM
@@ -381,12 +381,12 @@
   fullname: International Conference on Machine Learning
   rank: 4
   hindex: 135
-  year: 2022
-  id: icml22
-  link: https://icml.cc/Conferences/2021
+  year: 2023
+  id: icml23
+  link: https://icml.cc/Conferences/FutureMeetings
   deadline: TBD
   abstract_deadline: TBD
   timezone: UTC-12
-  date: July 17-23, 2022
-  place: Baltimore, Maryland
+  date: July 24-30, 2022
+  place: Seoul, South Korea
   sub: ML
