@@ -1,5 +1,31 @@
 ---
 
+- title: NeurIPS
+  fullname: Conference on Neural Information Processing Systems
+  hindex: 198
+  year: 2022
+  id: neurips22
+  link: https://nips.cc/Conferences/2022
+  deadline: '2022-05-19 13:00:00'
+  abstract_deadline: '2022-05-16 13:00:00'
+  timezone: America/Los_Angeles
+  date: November 28 - December 9, 2022
+  place: Hybrid - Online/New Orleans, LA
+  sub: ML
+  note: '<b>NOTE</b>: Mandatory abstract deadline on May 16, 2022'
+
+- title: SciTech
+  fullname: AIAA SciTech Forum and Exposition
+  year: 2023
+  id: scitech23
+  link: https://www.aiaa.org/SciTech
+  date: January 23-27, 2023
+  abstract_deadline: '2022-06-01 20:00:00'
+  deadline: '2022-12-05 20:00:00'
+  timezone: America/New_York
+  place: National Harbor, MD and Online
+  sub: AA
+
 - title: ICAART
   fullname: International Conference on Agents and Artificial Intelligence
   year: 2023
@@ -69,20 +95,6 @@
   date: December 13-15, 2021
   place: Austin, TX
   sub: RO, AI
-
-- title: NeurIPS
-  fullname: Conference on Neural Information Processing Systems
-  hindex: 198
-  year: 2022
-  id: neurips22
-  link: https://nips.cc/Conferences/2022
-  deadline: '2022-05-19 13:00:00'
-  abstract_deadline: '2022-05-16 13:00:00'
-  timezone: America/Los_Angeles
-  date: November 28 - December 9, 2022
-  place: Hybrid - Online/New Orleans, LA
-  sub: ML
-  note: '<b>NOTE</b>: Mandatory abstract deadline on May 16, 2022'
 
 - title: AAAI
   fullname: AAAI Conference on Artificial Intelligence
@@ -205,18 +217,6 @@
   date: October 23-27, 2022
   place: Kyoto, Japan
   sub: RO
-
-- title: SciTech
-  fullname: AIAA SciTech Forum and Exposition
-  year: 2023
-  id: scitech23
-  link: https://www.aiaa.org/SciTech
-  date: January 23-27, 2023
-  abstract_deadline: '2022-06-01 20:00:00'
-  deadline: '2022-12-05 20:00:00'
-  timezone: America/New_York
-  place: National Harbor, MD and Online
-  sub: AA
 
 - title: NFM
   fullname: NASA Formal Methods Symposium
