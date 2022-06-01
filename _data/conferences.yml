@@ -14,13 +14,13 @@
 
 - title: CoRL
   fullname: Conference on Robot Learning
-  year: 2021
-  id: corl21
-  link: http://www.robot-learning.org
-  deadline: '2020-06-18 23:59:59'
+  year: 2022
+  id: corl22
+  link: https://corl2022.org/
+  deadline: '2022-06-15 23:59:59'
   timezone: UTC-7
-  date: Novemeber 8 - November 11, 2021
-  place: London, UK
+  date: December 14-18, 2022
+  place: Auckland, New Zealand
   sub: RO, AI
 
 - title: KDD
@@ -86,17 +86,16 @@
 
 - title: AAAI
   fullname: AAAI Conference on Artificial Intelligence
-  year: 2022
-  id: aaai22
-  link: https://aaai.org/Conferences/AAAI-22/
-  rank: 7
-  date: Feburary 22-March 1, 2022
-  abstract_deadline: '2021-08-30 23:59:59'
-  deadline: '2021-09-08 23:59:59'
-  timezone: UTC-10
-  place: Vancouver, BC, Canada
+  year: 2023
+  id: aaai23
+  link: https://aaai.org/Conferences/AAAI-23/
+  rank: 5
+  date: Feburary 7-14, 2023
+  abstract_deadline: '2022-08-08 23:59:59'
+  deadline: '2022-08-15 23:59:59'
+  timezone: UTC-12
+  place: Washinton, D.C., USA
   sub: AI
-  note: Doctoral consortium
 
 - title: ICRA
   fullname: IEEE International Conference on Robotics and Automation
@@ -135,14 +134,13 @@
   sub: ML
 
 - title: HRI
-  hindex: 40
-  year: 2022
-  id: hri22
-  link: https://humanrobotinteraction.org/2022/
-  deadline: '2021-10-01 23:59:59'
+  year: 2023
+  id: hri23
+  link: https://humanrobotinteraction.org/2023/
+  deadline: TBA
   timezone: UTC-12
-  date: March 7-10, 2022
-  place: Sapporo, Hokkaido, Japan
+  date: March 13-16, 2023
+  place: Stockholm, Sweden
   sub: RO
 
 - title: AAMAS
@@ -326,8 +324,9 @@
   year: 2022
   id: itsc22
   link: https://www.ieee-itsc2022.org
-  date: TBD
-  deadline: TBD
+  date: October 8-12, 2022
+  deadline: '2022-04-14 23:59:59'
+  timezone: UTC-12
   place: Macau, China
   sub: AUTO, AI
 
@@ -370,8 +369,8 @@
   hindex: 67
   id: ijcai22
   link: https://ijcai-22.org
-  deadline: TBD
-  abstract_deadline: TBD
+  deadline: '2022-01-12 23:59:59'
+  abstract_deadline: '2022-01-07 23:59:59'
   timezone: UTC-12
   date: July 23-29, 2022
   place: Vienna, Austria
@@ -379,14 +378,14 @@
 
 - title: ICML
   fullname: International Conference on Machine Learning
-  rank: 4
-  hindex: 135
+  rank: 7
+  hindex: 171
   year: 2023
   id: icml23
   link: https://icml.cc/Conferences/FutureMeetings
-  deadline: TBD
-  abstract_deadline: TBD
+  deadline: TBA
+  abstract_deadline: TBA
   timezone: UTC-12
-  date: July 24-30, 2022
+  date: July 24-30, 2023
   place: Seoul, South Korea
   sub: ML
