@@ -1,19 +1,5 @@
 ---
 
-- title: NeurIPS
-  fullname: Conference on Neural Information Processing Systems
-  hindex: 198
-  year: 2022
-  id: neurips22
-  link: https://nips.cc/Conferences/2022
-  deadline: '2022-05-19 13:00:00'
-  abstract_deadline: '2022-05-16 13:00:00'
-  timezone: America/Los_Angeles
-  date: November 28 - December 9, 2022
-  place: Hybrid - Online/New Orleans, LA
-  sub: ML
-  note: '<b>NOTE</b>: Mandatory abstract deadline on May 16, 2022'
-
 - title: SciTech
   fullname: AIAA SciTech Forum and Exposition
   year: 2023
@@ -26,6 +12,30 @@
   place: National Harbor, MD and Online
   sub: AA
 
+- title: CoRL
+  fullname: Conference on Robot Learning
+  year: 2022
+  id: corl22
+  link: https://corl2022.org/
+  deadline: '2022-06-15 23:59:59'
+  timezone: UTC-7
+  date: December 14-18, 2022
+  place: Auckland, New Zealand
+  sub: RO, AI
+
+- title: AAAI
+  fullname: AAAI Conference on Artificial Intelligence
+  year: 2023
+  id: aaai23
+  link: https://aaai.org/Conferences/AAAI-23/
+  rank: 5
+  date: Feburary 7-14, 2023
+  abstract_deadline: '2022-08-08 23:59:59'
+  deadline: '2022-08-15 23:59:59'
+  timezone: UTC-12
+  place: Washinton, D.C., USA
+  sub: AI
+
 - title: ICAART
   fullname: International Conference on Agents and Artificial Intelligence
   year: 2023
@@ -37,17 +47,6 @@
   place: Lisbon, Portugal
   sub: AI
   note: Doctoral consortium
-
-- title: CoRL
-  fullname: Conference on Robot Learning
-  year: 2022
-  id: corl22
-  link: https://corl2022.org/
-  deadline: '2022-06-15 23:59:59'
-  timezone: UTC-7
-  date: December 14-18, 2022
-  place: Auckland, New Zealand
-  sub: RO, AI
 
 - title: KDD
   hindex: 30
@@ -96,19 +95,6 @@
   place: Austin, TX
   sub: RO, AI
 
-- title: AAAI
-  fullname: AAAI Conference on Artificial Intelligence
-  year: 2023
-  id: aaai23
-  link: https://aaai.org/Conferences/AAAI-23/
-  rank: 5
-  date: Feburary 7-14, 2023
-  abstract_deadline: '2022-08-08 23:59:59'
-  deadline: '2022-08-15 23:59:59'
-  timezone: UTC-12
-  place: Washinton, D.C., USA
-  sub: AI
-
 - title: ICRA
   fullname: IEEE International Conference on Robotics and Automation
   year: 2022
@@ -144,16 +130,6 @@
   date: April 25-29, 2022
   place: Virtual
   sub: ML
-
-- title: HRI
-  year: 2023
-  id: hri23
-  link: https://humanrobotinteraction.org/2023/
-  deadline: TBA
-  timezone: UTC-12
-  date: March 13-16, 2023
-  place: Stockholm, Sweden
-  sub: RO
 
 - title: AAMAS
   fullname: International Conference on Autonomous Agents and Multi-Agent Systems
@@ -242,6 +218,20 @@
   sub: ML
   note: Mandatory abstract deadline on Dec 10, 2021. Doctoral consortium
 
+- title: IJCAI
+  fullname: International Joint Conference on Artificial Intelligence
+  year: 2022
+  rank: 22
+  hindex: 67
+  id: ijcai22
+  link: https://ijcai-22.org
+  deadline: '2022-01-12 23:59:59'
+  abstract_deadline: '2022-01-07 23:59:59'
+  timezone: UTC-12
+  date: July 23-29, 2022
+  place: Vienna, Austria
+  sub: ML, AI
+
 - title: CAV
   fullname: International Conference on Computer-Aided Verification
   year: 2022
@@ -288,6 +278,31 @@
   place: Kyoto, Japan
   sub: RO
 
+- title: ITSC
+  fullname: IEEE International Conference on Intelligent Transportation Systems
+  year: 2022
+  id: itsc22
+  link: https://www.ieee-itsc2022.org
+  date: October 8-12, 2022
+  deadline: '2022-04-14 23:59:59'
+  timezone: UTC-12
+  place: Macau, China
+  sub: AUTO, AI
+
+- title: NeurIPS
+  fullname: Conference on Neural Information Processing Systems
+  hindex: 198
+  year: 2022
+  id: neurips22
+  link: https://nips.cc/Conferences/2022
+  deadline: '2022-05-19 13:00:00'
+  abstract_deadline: '2022-05-16 13:00:00'
+  timezone: America/Los_Angeles
+  date: November 28 - December 9, 2022
+  place: Hybrid - Online/New Orleans, LA
+  sub: ML
+  note: '<b>NOTE</b>: Mandatory abstract deadline on May 16, 2022'
+
 - title: AIAA Space
   fullname: AIAA Space and Astronautics Forum and Exposition
   year: 2020
@@ -318,17 +333,6 @@
   place: TBD
   sub: AA
   note: Biennial
-
-- title: ITSC
-  fullname: IEEE International Conference on Intelligent Transportation Systems
-  year: 2022
-  id: itsc22
-  link: https://www.ieee-itsc2022.org
-  date: October 8-12, 2022
-  deadline: '2022-04-14 23:59:59'
-  timezone: UTC-12
-  place: Macau, China
-  sub: AUTO, AI
 
 - title: ECML-PKDD
   hindex: 30
@@ -362,19 +366,15 @@
   place: Portsmouth, Norfolk Virginia
   sub: AA
 
-- title: IJCAI
-  fullname: International Joint Conference on Artificial Intelligence
-  year: 2022
-  rank: 22
-  hindex: 67
-  id: ijcai22
-  link: https://ijcai-22.org
-  deadline: '2022-01-12 23:59:59'
-  abstract_deadline: '2022-01-07 23:59:59'
+- title: HRI
+  year: 2023
+  id: hri23
+  link: https://humanrobotinteraction.org/2023/
+  deadline: TBA
   timezone: UTC-12
-  date: July 23-29, 2022
-  place: Vienna, Austria
-  sub: ML, AI
+  date: March 13-16, 2023
+  place: Stockholm, Sweden
+  sub: RO
 
 - title: ICML
   fullname: International Conference on Machine Learning
