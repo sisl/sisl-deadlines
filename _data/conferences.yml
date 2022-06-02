@@ -6,8 +6,9 @@
   id: scitech23
   link: https://www.aiaa.org/SciTech
   date: January 23-27, 2023
-  abstract_deadline: '2022-06-01 20:00:00'
-  deadline: '2022-12-05 20:00:00'
+  deadline: '2022-06-01 20:00:00'
+  start: 2023-01-23
+  end: 2023-01-27
   timezone: America/New_York
   place: National Harbor, MD and Online
   sub: AA
@@ -20,8 +21,10 @@
   deadline: '2022-06-15 23:59:59'
   timezone: UTC-7
   date: December 14-18, 2022
+  start: 2022-12-14
+  start: 2022-12-18
   place: Auckland, New Zealand
-  sub: RO, AI
+  sub: [RO, AI]
 
 - title: AAAI
   fullname: AAAI Conference on Artificial Intelligence
@@ -30,6 +33,8 @@
   link: https://aaai.org/Conferences/AAAI-23/
   rank: 5
   date: Feburary 7-14, 2023
+  start: 2023-02-07
+  end: 2023-02-14
   abstract_deadline: '2022-08-08 23:59:59'
   deadline: '2022-08-15 23:59:59'
   timezone: UTC-12
@@ -42,8 +47,11 @@
   id: icaart23
   link: https://icaart.scitevents.org
   deadline: '2022-10-10 23:59:59'
+  end:
   timezone: UTC-12
   date: Feburary 16-18, 2023
+  start: 2023-02-16
+  end: 2023-02-18
   place: Lisbon, Portugal
   sub: AI
   note: Doctoral consortium
@@ -52,12 +60,15 @@
   fullname: This is a Test Conference
   year: 2023
   id: test23
+  date: June 14-18, 2022
+  start: 2022-06-14
+  end: 2022-06-18
   link: http://notpurple.com/
   deadline: '2022-06-06 23:59:59'
   abstract_deadline: '2022-06-05 23:59:59'
   timezone: UTC-8
   place: Stanford, CA
-  sub: AI, ML, RO
+  sub: [AI, ML, RO]
 
 - title: KDD
   hindex: 30
@@ -67,6 +78,8 @@
   deadline: '2021-02-08 23:59:59'
   timezone: UTC-12
   date: August 14-18, 2021
+  start: 2021-08-14
+  end: 2021-08-18
   place: Singapore
   sub: ML
 
@@ -80,8 +93,11 @@
   deadline: '2021-02-19 23:59:59'
   timezone: UTC
   date: July 26-30, 2021
-  place: TBD
+  start: 2021-07-26
+  end: 2021-07-30
+  place: Online
   sub: ML
+  paperslink: https://proceedings.mlr.press/v161/
 
 - title: RSS
   fullname: 'Robotics: Science and Systems'
@@ -92,8 +108,11 @@
   deadline: '2021-03-01 23:59:59'
   timezone: UTC-12
   date: Jul 12-16, 2021
+  start: 2021-07-12
+  end: 2021-07-16
   place: Online
   sub: RO
+  paperslink: http://www.roboticsproceedings.org/rss18/index.html
 
 - title: CDC
   fullname: IEEE Conference on Decision and Control
@@ -103,8 +122,10 @@
   deadline: '2021-03-18 23:59:59'
   timezone: America/New_York
   date: December 13-15, 2021
+  start: 2021-12-13
+  end: 2021-12-15
   place: Austin, TX
-  sub: RO, AI
+  sub: [RO, AI]
 
 - title: ICRA
   fullname: IEEE International Conference on Robotics and Automation
@@ -113,6 +134,8 @@
   link: https://www.icra2022.org
   rank: 11
   date: May 23-27, 2022
+  start: 2022-05-23
+  end: 2022-05-27
   deadline: '2021-09-15 23:59:59'
   timezone: America/Los_Angeles
   place: Philadelphia, PA
@@ -124,6 +147,8 @@
   id: iaai22
   link: https://aaai.org/Conferences/AAAI-22/iaai-22-call/
   date: Feburary 24-26, 2022
+  start: 2022-02-24
+  end: 2022-02-26
   deadline: '2021-09-18 23:59:59'
   timezone: UTC-12
   place: Vancouver, BC, Canada
@@ -139,6 +164,8 @@
   abstract_deadline: '2021-10-06 07:59:59'
   timezone: UTC-7
   date: April 25-29, 2022
+  start: 2022-04-25
+  end: 2022-04-29
   place: Virtual
   sub: ML
 
@@ -152,8 +179,10 @@
   abstract_deadline: '2021-10-01 23:59:59'
   timezone: UTC-12
   date: May 9-13, 2022
+  start: 2022-05-09
+  end: 2022-05-13
   place: Auckland, New Zealand
-  sub: ML, AI
+  sub: [ML, AI]
 
 - title: ACC
   fullname: American Control Conference
@@ -164,6 +193,8 @@
   deadline: '2021-10-12 23:59:59'
   timezone: America/Los_Angeles
   date: June 8-10, 2022
+  start: 2022-06-08
+  end: 2022-06-10
   place: Atlanta, GA
   sub: RO
 
@@ -176,8 +207,11 @@
   deadline: '2021-10-15 11:59:00'
   timezone: UTC
   date: March 28-30, 2022
+  start: 2022-03-28
+  end: 2022-03-30
   place: Valencia, Spain
   sub: ML
+  paperslink: http://proceedings.mlr.press/v151/
 
 - title: TACAS
   fullname: International Conference on Tools and Algorithms for the Construction
@@ -185,35 +219,42 @@
   year: 2022
   id: tacas22
   link: https://etaps.org/2022/call-for-papers
-  rank: 82
   date: April 2-7, 2022
+  start: 2022-04-02
+  end: 2022-04-07
   deadline: '2021-10-14 23:59:00'
   timezone: UTC-12
   place: Munich, Germany
   sub: VV
+  paperslink: https://etaps.org/2022/proceedings
 
 - title: L4DC
   fullname: Learning for Dynamics & Control Conference
   year: 2022
   id: l4dc22
   link: https://l4dc.su.domains
-  deadline: '2021-11-30 17:00:00'
-  timezone: America/New_York
-  date: October 23-27, 2022
-  place: Kyoto, Japan
+  deadline: '2021-12-07 17:00:00'
+  timezone: UTC-5
+  date: June 23-24, 2022
+  start: 2022-06-23
+  end: 2022-06-24
+  place: Stanford, CA
   sub: RO
 
 - title: NFM
   fullname: NASA Formal Methods Symposium
   year: 2022
   id: nfm22
-  link: https://shemesh.larc.nasa.gov/nfm2022/
+  link: https://nfm2022.caltech.edu/
   date: May 24-27, 2022
+  start: 2022-05-24
+  end: 2022-05-27
   abstract_deadline: '2021-12-3 23:59:59'
   deadline: '2021-12-10 23:59:59'
   timezone: America/Los_Angeles
   place: Caltech, Pasadena, California
   sub: VV
+  paperslink: https://link.springer.com/book/10.1007/978-3-031-06773-0
 
 - title: ICAPS
   fullname: International Conference on Automated Planning and Scheduling
@@ -241,7 +282,7 @@
   timezone: UTC-12
   date: July 23-29, 2022
   place: Vienna, Austria
-  sub: ML, AI
+  sub: [ML, AI]
 
 - title: CAV
   fullname: International Conference on Computer-Aided Verification
@@ -264,7 +305,7 @@
   deadline: '2022-02-01 23:59:59'
   timezone: America/Los_Angeles
   place: Aachen, Germany
-  sub: AUTO, AI
+  sub: [AUTO, AI]
 
 - title: CCTA
   fullname: Conference on Control Technology and Applications
@@ -298,7 +339,7 @@
   deadline: '2022-04-14 23:59:59'
   timezone: UTC-12
   place: Macau, China
-  sub: AUTO, AI
+  sub: [AUTO, AI]
 
 - title: NeurIPS
   fullname: Conference on Neural Information Processing Systems
@@ -314,47 +355,45 @@
   sub: ML
   note: '<b>NOTE</b>: Mandatory abstract deadline on May 16, 2022'
 
-- title: AIAA Space
-  fullname: AIAA Space and Astronautics Forum and Exposition
-  year: 2020
-  id: aiaaspace20
-  link: https://arc.aiaa.org/series/6.space
-  date: TBD
-  deadline: TBD
-  place: TBD
-  sub: AA
-
 - title: FSW
   fullname: NASA Flight Software Workshop
-  year: 2020
-  id: fsw20
-  link: http://flightsoftware.jhuapl.edu/
-  date: TBD
+  year: 2023
+  id: fsw23
+  link: https://flightsoftware.jhuapl.edu/workshop/FSW2023
+  date: March 20-24, 2023
+  start: 2023-03-20
+  end: 2023-03-24
   deadline: TBD
-  place: TBD
+  place: JPL, Pasadena, CA
   sub: AA
 
 - title: ATM Seminar
   fullname: Air Traffic Management Research and Development
   year: 2021
   id: atm21
-  link: http://www.atmseminar.org/
-  date: TBD
-  deadline: TBD
-  place: TBD
+  link: https://www.atmseminar.org/upcoming-seminar/
+  date: September 20-23, 2021
+  start: 2021-09-20
+  end: 2021-09-23
+  paperslink: https://www.atmseminar.org/upcoming-seminar/papers-and-presentations/
+  deadline: '2021-04-19 23:59:59'
+  place: Virtual
   sub: AA
   note: Biennial
 
 - title: ECML-PKDD
-  hindex: 30
   year: 2022
   id: ecmlpkdd2022
-  link: https://2021.ecmlpkdd.org/
-  deadline: TBD
-  abstract_deadline: TBD
+  link: https://2022.ecmlpkdd.org/
+  abstract_deadline: '2022-03-30 23:59:59'
+  deadline: '2022-04-06 23:59:59'
+  timezone: UTC-12
   date: September 19-23, 2022
+  start: 2022-09-19
+  end: 2022-09-23
   place: Grenoble, France
   sub: ML
+  paperslink: https://kdd.org/kdd2021/accepted-papers/index
 
 - title: AVIATION
   fullname: AIAA AVIATION Forum and Exposition
@@ -362,7 +401,10 @@
   id: aviation22
   link: https://www.aiaa.org/aviation
   date: June 27-July 1, 2022
-  deadline: TBD
+  start: 2022-06-27
+  end: 2022-07-01
+  deadline: '2021-09-16 23:59:59'
+  timezone: UTC-5
   place: Chicago, IL
   sub: AA
 
@@ -371,11 +413,27 @@
   year: 2022
   id: dasc21
   link: https://2021.dasconline.org/
-  date: TBD
-  abstract_deadline: TBD
-  deadline: TBD
-  place: Portsmouth, Norfolk Virginia
+  date: Sepatember 18-22, 2022
+  start: 2022-09-18
+  end: 2022-09-22
+  abstract_deadline: '2022-04-02 23:59:59'
+  deadline: '2022-04-29 23:59:59'
+  timezone: UTC-5
+  place: Portsmouth, Virginia
   sub: AA
+
+- title: HRI
+  year: 2022
+  id: hri22
+  link: https://humanrobotinteraction.org/2022/
+  deadline: '2021-10-01 23:59:59'
+  timezone: UTC-12
+  date: March 7-10, 2022
+  start: 2022-03-07
+  end: 2022-03-10
+  place: Virtual
+  sub: RO
+  paperslink: https://humanrobotinteraction.org/2022/toc.html
 
 - title: HRI
   year: 2023
@@ -384,13 +442,14 @@
   deadline: TBA
   timezone: UTC-12
   date: March 13-16, 2023
+  start: 2023-03-13
+  end: 2023-03-16
   place: Stockholm, Sweden
   sub: RO
 
+
 - title: ICML
   fullname: International Conference on Machine Learning
-  rank: 7
-  hindex: 171
   year: 2023
   id: icml23
   link: https://icml.cc/Conferences/FutureMeetings
@@ -398,5 +457,50 @@
   abstract_deadline: TBA
   timezone: UTC-12
   date: July 24-30, 2023
+  start: 2023-07-24
+  end: 2023-07-30
   place: Seoul, South Korea
   sub: ML
+
+- title: ICML
+  fullname: International Conference on Machine Learning
+  year: 2022
+  id: icml22
+  link: https://icml.cc/Conferences/2022
+  abstract_deadline: '2022-01-20 23:59:59'
+  deadline: '2022-01-27 23:59:59'
+  timezone: UTC-12
+  date: July 17-23, 2022
+  start: 2022-07-17
+  end: 2022-07-23
+  place: Baltimore, MD
+  sub: ML
+
+- title: L4DC
+  fullname: Learning for Dynamics & Control Conference
+  year: 2021
+  id: l4dc21
+  link: https://l4dc.su.domains
+  deadline: '2020-11-20 05:00:00'
+  timezone: UTC-5
+  date: June 7-8, 2021
+  start: 2021-06-7
+  end: 2021-06-8
+  place: Virtual
+  sub: RO
+  paperslink: https://proceedings.mlr.press/v144/
+
+- title: NeurIPS
+  id: neurips21
+  fullname: Conference on Neural Information Processing Systems
+  year: 2021
+  link: https://nips.cc/Conferences/2021
+  abstract_deadline: '2021-05-21 01:00:00'
+  deadline: '2021-05-28 01:00:00'
+  timezone: UTC-7
+  date: December 6-14, 2021
+  start: 2021-12-06
+  end: 2021-06-14
+  place: Virtual
+  sub: ML
+  paperslink: https://proceedings.neurips.cc/paper/2021
