@@ -48,6 +48,17 @@
   sub: AI
   note: Doctoral consortium
 
+- title: TestConf
+  fullname: This is a Test Conference
+  year: 2023
+  id: test23
+  link: http://notpurple.com/
+  deadline: '2022-06-06 23:59:59'
+  abstract_deadline: '2022-06-05 23:59:59'
+  timezone: UTC-8
+  place: Stanford, CA
+  sub: AI, ML, RO
+
 - title: KDD
   hindex: 30
   year: 2021
