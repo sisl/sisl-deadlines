@@ -9,6 +9,7 @@ twitter_username: SISLaboratory
 twitter_hashtag: sisl
 github_username: sisl
 github_repo: sisl-deadlines
+github: [metadata]
 
 markdown: kramdown
 ga_id: 
