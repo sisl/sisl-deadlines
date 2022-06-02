@@ -18,30 +18,19 @@ To add or update information:
 - Update `_data/conferences.yml`
 - Make sure it has the `title`, `fullname`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
     + See available timezone strings [here](https://momentjs.com/timezone/)
-    + Multiple `sub` attributes can be separated by commas (see [`_data/types.yml`](https://github.com/sisl/sisl-deadlines/blob/gh-pages/_data/types.yml))
+    + Multiple `sub` attributes can be added with standard yaml syntax (e.g. `[RO, ML]`, see [`_data/types.yml`](https://github.com/sisl/sisl-deadlines/blob/gh-pages/_data/types.yml))
 
 - Optionally:
 	+ Add an `abstract_deadline` in case the conference has a separate mandatory abstract deadline
+	+ Add `start` and `end` fields. These dates are used in the calendar tab.
 	+ Add a `rank` based on the H-Index _ordering_ from [Computer Science Conferences Rankings][14]
 	+ Add a `note` for additional comments (e.g., "Biennial" or "Doctorial consortium")
-- Run `update.bat` which sorts conferences by deadline, verifies the YML file, and updates the .ics calendar file
 - Send a pull request
 
 ## Resources
 - [Call for Papers Wiki][12]
 - [Conference Rankings][13]
 - [Computer Science Conferences Rankings][14]
-
-## Changes
-
-- [x] Full conference name (`fullname`: _italicized subtitle_)
-- [x] Multiple types per conference (e.g., '`sub: AUTO, AI`')
-- [x] Added rankings <sup>[superscript]</sup>
-	- [x] H-Index / CORE rating from [Computer Science Conferences Rankings][14]
-- [x] Sorted by abstract deadline
-- [x] Link directly to conference website
-- [x] Combined SISL spreadsheet and wiki
-- [x] Conference newsletter email address: sisl.deadlines@gmail.com
 
 ## Forks & other useful listings
 

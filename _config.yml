@@ -10,6 +10,8 @@ twitter_hashtag: sisl
 github_username: sisl
 github_repo: sisl-deadlines
 
+github: [metadata]
+
 repository: dylan-asmar/sisl_deadlines
 
 markdown: kramdown
