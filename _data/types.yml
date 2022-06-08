@@ -1,13 +1,19 @@
 ---
 - name: Artificial Intelligence
   sub: AI
-- name: Aerospace
-  sub: AA
-- name: Autonomous Driving
-  sub: AUTO
+  color: "#deff0a"
 - name: Machine Learning
   sub: ML
+  color: "#ffd300"
+- name: Aerospace
+  sub: AA
+  color: "#0aefff"
+- name: Autonomous Driving
+  sub: AUTO
+  color: "#147df5"
 - name: Robotics
   sub: RO
+  color: "#0aff99"
 - name: Validation
   sub: VV
+  color: "#580aff"

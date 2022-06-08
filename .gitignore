@@ -1,2 +1,5 @@
 _site
 utils/sorted_data.yml
+.DS_Store
+.vs_code
+.bundle
