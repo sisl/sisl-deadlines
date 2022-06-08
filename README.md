@@ -1,4 +1,4 @@
-## SISL Deadlines [![Build Status](https://github.com/dylan-asmar/sisl-deadlines/actions/workflows/jekyll_build.yml/badge.svg)](https://github.com/dylan-asmar/sisl-deadlines/actions/workflows/jekyll_build.yml)
+## SISL Deadlines [![Build Status](https://github.com/sisl/sisl-deadlines/actions/workflows/jekyll_build.yml/badge.svg)](https://github.com/sisl/sisl-deadlines/actions/workflows/jekyll_build.yml)
 
 Countdown timers to keep track of conference deadlines relating to research at the [Stanford Intelligent Systems Laboratory (SISL)](http://sisl.stanford.edu/)
 - Artificial Intelligence

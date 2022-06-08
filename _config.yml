@@ -12,7 +12,7 @@ github_repo: sisl-deadlines
 
 github: [metadata]
 
-repository: dylan-asmar/sisl_deadlines
+repository: sisl/sisl_deadlines
 
 markdown: kramdown
 ga_id: 
