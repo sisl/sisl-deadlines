@@ -1,5 +1,19 @@
 ---
 
+- title: ICRA
+  fullname: IEEE International Conference on Robotics and Automation
+  year: 2023
+  id: icra23
+  link: https://www.icra2023.org/
+  date: May 29 - 2 Jun 2023
+  start: 2023-05-29
+  end: 2023-06-02
+  deadline: '2022-09-15 23:59:59'
+  timezone: America/Los_Angeles
+  place: London, UK
+  sub: RO
+  paperslink: https://ieeexplore.ieee.org/xpl/conhome/9811522/proceeding
+
 - title: SciTech
   fullname: AIAA SciTech Forum and Exposition
   year: 2023
@@ -55,20 +69,6 @@
   place: Lisbon, Portugal
   sub: AI
   note: Doctoral consortium
-
-- title: TestConf
-  fullname: This is a Test Conference
-  year: 2023
-  id: test23
-  date: June 14-18, 2022
-  start: 2022-06-14
-  end: 2022-06-18
-  link: http://notpurple.com/
-  deadline: '2022-06-06 23:59:59'
-  abstract_deadline: '2022-06-05 23:59:59'
-  timezone: UTC-8
-  place: Stanford, CA
-  sub: [AI, ML, RO]
 
 - title: KDD
   hindex: 30
@@ -140,6 +140,7 @@
   timezone: America/Los_Angeles
   place: Philadelphia, PA
   sub: RO
+  paperslink: https://ieeexplore.ieee.org/xpl/conhome/9811522/proceeding
 
 - title: IAAI
   fullname: AAAI Conference on Innovative Applications of Artificial Intelligence
