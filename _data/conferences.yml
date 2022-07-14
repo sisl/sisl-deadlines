@@ -1,5 +1,18 @@
 ---
 
+- title: ICARA
+  fullname: International Conference on Automation, Robotics, and Automation
+  year: 2023
+  id: icara23
+  link: http://www.icara.us/index.html
+  date: Feb 10-12, 2023
+  start: 2023-02-10
+  end: 2023-02-12
+  deadline: '2022-09-20 23:59:59'
+  timezone: UTC-12
+  place: Abu Dhabi, UAE
+  sub: RO
+
 - title: ICRA
   fullname: IEEE International Conference on Robotics and Automation
   year: 2023
