@@ -169,6 +169,20 @@
 
 - title: ICLR
   fullname: International Conference on Learning Representations
+  year: 2023
+  id: iclr23
+  link: https://iclr.cc
+  deadline: '2022-09-28 23:59:59'
+  abstract_deadline: '2022-09-21 23:59:59'
+  timezone: UTC-12
+  date: May 1-5, 2023
+  start: 2023-05-01
+  end: 2023-05-05
+  place: Kigali, Rwanda, Africa
+  sub: ML
+
+- title: ICLR
+  fullname: International Conference on Learning Representations
   hindex: 150
   year: 2022
   id: iclr22
@@ -181,6 +195,34 @@
   end: 2022-04-29
   place: Virtual
   sub: ML
+  paperslink: https://openreview.net/group?id=ICLR.cc/2022/Conference
+
+- title: ICCV
+  fullname: International Conference on Computer Vision
+  year: 2023
+  id: iccv23
+  link: https://iccv2023.thecvf.com/
+  deadline: '2022-03-08 23:59:59'
+  timezone: UTC
+  date: 30 Sep - 6 Oct 2023
+  start: 2023-09-30
+  end: 2023-10-06
+  place: Paris, France
+  sub: ML
+
+- title: AAMAS
+  fullname: International Conference on Autonomous Agents and Multi-Agent Systems
+  year: 2023
+  id: aamas23
+  link: https://aamas2023.soton.ac.uk/
+  abstract_deadline: '2022-10-21 23:59:59'
+  deadline: '2022-10-28 23:59:59'
+  timezone: UTC-12
+  date: 29 May - 2 June 2023
+  start: 2023-05-29
+  end: 2023-06-02
+  place: London, UK
+  sub: [ML, AI]
 
 - title: AAMAS
   fullname: International Conference on Autonomous Agents and Multi-Agent Systems
@@ -196,6 +238,7 @@
   end: 2022-05-13
   place: Auckland, New Zealand
   sub: [ML, AI]
+  paperslink: https://ifaamas.org/Proceedings/aamas2022/forms/contents.htm
 
 - title: ACC
   fullname: American Control Conference
@@ -210,6 +253,19 @@
   end: 2022-06-10
   place: Atlanta, GA
   sub: RO
+
+- title: AISTATS
+  year: 2023
+  id: aistats23
+  link: https://aistats.org/aistats2023/
+  abstract_deadline: '2022-10-06 23:59:59'
+  deadline: '2022-10-13 23:59:59'
+  timezone: UTC-12
+  date: March 3 - April 1 2023
+  start: 2023-03-30
+  end: 2024-04-01
+  place: TBA
+  sub: [ML, AI]
 
 - title: AISTATS
   hindex: 52
@@ -240,6 +296,19 @@
   place: Munich, Germany
   sub: VV
   paperslink: https://etaps.org/2022/proceedings
+
+- title: L4DC
+  fullname: Learning for Dynamics & Control Conference
+  year: 2023
+  id: l4dc23
+  link: https://l4dc.seas.upenn.edu/
+  deadline: '2022-11-18 17:00:00'
+  timezone: UTC-5
+  date: TBA June 2023
+  start: 2023-06-23
+  end: 2023-06-24
+  place: Philadelphia, PA
+  sub: RO
 
 - title: L4DC
   fullname: Learning for Dynamics & Control Conference
@@ -282,6 +351,7 @@
   place: Singapore Management University, Singapore
   sub: ML
   note: Mandatory abstract deadline on Dec 10, 2021. Doctoral consortium
+  paperslink: http://icaps22.icaps-conference.org/papers
 
 - title: IJCAI
   fullname: International Joint Conference on Artificial Intelligence
@@ -296,6 +366,7 @@
   date: July 23-29, 2022
   place: Vienna, Austria
   sub: [ML, AI]
+  paperslink: https://ijcai-22.org/accepted-papers/
 
 - title: CAV
   fullname: International Conference on Computer-Aided Verification
@@ -308,6 +379,7 @@
   timezone: UTC-12
   place: Technion, Haifa, Israel
   sub: VV
+  paperslink: http://i-cav.org/2022/open-access-proceedings/
 
 - title: IV
   fullname: IEEE Intelligent Vehicles Symposium
@@ -330,6 +402,7 @@
   date: August 23-25, 2022
   place: Trieste, Italy
   sub: RO
+  paperslink: https://css.paperplaza.net/conferences/conferences/CCTA22/program/CCTA22_ProgramAtAGlanceWeb.html
 
 - title: IROS
   fullname: IEEE/RSJ International Conference on Intelligent Robots and Systems
@@ -376,7 +449,8 @@
   date: March 20-24, 2023
   start: 2023-03-20
   end: 2023-03-24
-  deadline: TBD
+  deadline: '2022-12-12 23:59:59'
+  timezone: America/Los_Angeles
   place: JPL, Pasadena, CA
   sub: AA
 
@@ -426,7 +500,7 @@
   year: 2022
   id: dasc21
   link: https://2021.dasconline.org/
-  date: Sepatember 18-22, 2022
+  date: September 18-22, 2022
   start: 2022-09-18
   end: 2022-09-22
   abstract_deadline: '2022-04-02 23:59:59'
@@ -452,7 +526,7 @@
   year: 2023
   id: hri23
   link: https://humanrobotinteraction.org/2023/
-  deadline: TBA
+  deadline: '2022-10-03 23:59:59'
   timezone: UTC-12
   date: March 13-16, 2023
   start: 2023-03-13
@@ -488,6 +562,7 @@
   end: 2022-07-23
   place: Baltimore, MD
   sub: ML
+  paperslink: https://proceedings.mlr.press/v162/
 
 - title: L4DC
   fullname: Learning for Dynamics & Control Conference
