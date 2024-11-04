@@ -1,5 +1,45 @@
 ---
 
+- title: ECC
+  fullname: European Confrol Conference
+  year: 2025
+  id: ecc25
+  link: https://ecc25.euca-ecc.org/
+  date: June 24 - June 27, 2025
+  start: 2025-06-24
+  end: 2025-06-27
+  deadline: '2025-11-08 23:59:59'
+  timezone: UTC
+  place: Thessaloniki, Greece
+  sub: AA
+
+- title: IEEEA
+  fullname: IEEE Aerospace
+  year: 2025
+  id: ieeea25
+  link: https://www.aiaa.org/events-learning/event/2025/03/01/default-calendar/2025-ieee-aerospace-conference
+  date: March 1 - March 8, 2025
+  start: 2025-03-01
+  end: 2025-03-08
+  deadline: '2024-10-04 23:59:59'
+  timezone: UTC-12
+  place: Big Sky, MT
+  sub: AA
+
+- title: RSS
+  fullname: Robotics Science and Systems
+  year: 2025
+  id: rss25
+  link: https://roboticsconference.org/
+  date: June 21 - June 25, 2025
+  start: 2025-06-21
+  end: 2025-06-25
+  abstract_deadline: '2025-01-17 23:59:59'
+  deadline: '2025-01-24 23:59:59'
+  timezone: UTC-12
+  place: Los Angeles, CA
+  sub: RO
+
 - title: AAAI
   fullname: Association for the Advancement of Artificial Intelligence
   year: 2025
