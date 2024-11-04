@@ -148,10 +148,10 @@
 
 - title: RSS
   fullname: 'Robotics: Science and Systems'
-  year: 2025
-  id: rss25
+  year: 2024
+  id: rss24
   link: https://roboticsconference.org/
-  deadline: '2021-02-02 23:59:59'
+  deadline: '2023-02-02 23:59:59'
   timezone: UTC-12
   date: Jul 15-19, 2024
   start: 2024-07-15
@@ -248,8 +248,8 @@
   deadline: '2022-11-22 17:00:00'
   timezone: UTC-5
   date: June 4 - 6, 2025
-  start: 2023-06-04
-  end: 2023-06-06
+  start: 2025-06-04
+  end: 2025-06-06
   place: Ann Arbor, MI
   sub: RO
 
