@@ -1,0 +1,2063 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>SISL Conference Deadlines</title>
+<meta name="description" content="Deadline countdowns for conferences relating to research at the <a href='https://sisl.stanford.edu'>Stanford Intelligent Systems Laboratory (SISL)</a>">
+<meta name="author" content="Robert Moss (forked from Abhishek Das)">
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/js-year-calendar.min.css?t=1731959239" media="screen,projection">
+
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/deadlines.css?t=1731959239" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/calendar.css?t=1731959239" media="screen,projection">
+
+<link rel="shortcut icon" href="/sisl-deadlines/static/img/favicon.png">
+
+<script type="text/javascript" src="/sisl-deadlines/static/js/js-year-calendar.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/popper.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/moment.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/moment-timezone-with-data.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/store.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/ouical.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/bootstrap-multiselect.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8C1515;">
+  <div class="container">
+      <div style="vertical-align: middle; padding-top: 0px;">
+        <div>
+          <a class="navbar-brand" href="/sisl-deadlines/" style="border-bottom: none; line-height: 0.1em;">
+          SISL Deadlines<br><br>
+          </a>
+        </div>
+      </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler"
+      aria-controls="navbars-toggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <a href="/sisl-deadlines/" class="nav-link" style="border-bottom: none">Countdowns</a>
+        </li>
+        <li>
+          <a href="/sisl-deadlines/calendar" class="nav-link" style="border-bottom: none;">Calendar</a>
+        </li>
+      </ul>
+      <div class="twitter-github-icons">
+        <a class="btn btn-sisl" href="https://sisl.stanford.edu">
+          <span>SISL</span></a>
+        <a href="https://twitter.com/share" class="twitter-share-button"
+          data-text="Deadline countdowns for conferences relating to research at the <a href='https://sisl.stanford.edu'>Stanford Intelligent Systems Laboratory (SISL)</a>"
+          data-show-count="false" style="font-size: 13px;">Tweet</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        &nbsp; &nbsp;
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=sisl&repo=sisl-deadlines&type=star&count=true"
+          frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+      <br>
+      <h1>Calendar Overview of Conference Deadlines and Dates</h1>
+      <div class="row">
+        <div class="meta col-sm-12">
+          Overview of deadlines and conference dates in a calendar.
+        </div>
+        <br>
+      </div>
+
+      <br>
+
+      <!-- Filter Form -->
+      <div class="row">
+        <form class="container">
+          <div class="row justify-content-center">
+            <div class="row align-items-md-center col-12 col-10-md">
+              <div class="col-12 col-md-5 filter-label">
+                <label for="subject-select" class="align-center" style="margin-bottom: 0px; line-height: 1.5;">
+                  Subject Filter:
+                </label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select
+                  id="subject-select"
+                  name="subject-select"
+                  multiple="multiple"
+                  style="display: none"
+                >
+                  
+                  <option value="AI" id="AI-checkbox">
+                    Artificial Intelligence (AI)
+                  </option>
+                  
+                  <option value="ML" id="ML-checkbox">
+                    Machine Learning (ML)
+                  </option>
+                  
+                  <option value="AA" id="AA-checkbox">
+                    Aerospace (AA)
+                  </option>
+                  
+                  <option value="AUTO" id="AUTO-checkbox">
+                    Autonomous Driving (AUTO)
+                  </option>
+                  
+                  <option value="RO" id="RO-checkbox">
+                    Robotics (RO)
+                  </option>
+                  
+                  <option value="VV" id="VV-checkbox">
+                    Validation (VV)
+                  </option>
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      <div id="calendar-page" class="calendar-page"></div>
+
+      <div class="modal fade" id="event-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Event</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <input type="hidden" name="event-index" />
+              <form class="form-horizontal">
+                <div class="form-group row">
+                  <label for="event-name" class="col-sm-4 control-label">Name</label>
+                  <div class="col-sm-8">
+                    <input id="event-name" name="event-name" type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="event-location" class="col-sm-4 control-label">Location</label>
+                  <div class="col-sm-8">
+                    <input id="event-location" name="event-location" type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="min-date" class="col-sm-4 control-label">Dates</label>
+                  <div class="col-sm-8">
+                    <div class="input-group input-daterange" data-provide="datepicker">
+                      <input id="min-date" name="event-start-date" type="text" class="form-control" />
+                      <div class="input-group-prepend input-group-append">
+                        <div class="input-group-text">to</div>
+                      </div>
+                      <input name="event-end-date" type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary" id="save-event">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="context-menu"></div>
+      <br>
+      <div class="row">
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: red;"></span> Deadlines
+        </div>
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: gray"></span> Today
+        </div>
+        
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: #deff0a"></span> Artificial Intelligence
+        </div>
+        
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: #ffd300"></span> Machine Learning
+        </div>
+        
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: #0aefff"></span> Aerospace
+        </div>
+        
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: #147df5"></span> Autonomous Driving
+        </div>
+        
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: #0aff99"></span> Robotics
+        </div>
+        
+        <div class="col-6 col-sm-4">
+          <span class="color-box" style="background-color: #580aff"></span> Validation
+        </div>
+        
+      </div>
+      <hr>
+      <footer>
+        <div class="row">
+  <div class="col-12 col-sm-12">
+    <a href="/">sisl.github.io</a>
+    was forked from 
+    <a href="https://twitter.com/abhshkdz">abhshkdz</a> and the original site is now run by
+    <a href="https://paperswithcode.com/">Papers With Code</a>.<br>
+  </div>
+</div>
+
+      </footer>
+
+    </div>
+
+
+
+    <script type="text/javascript" charset="utf-8">
+      let calendar = null;
+      var page_url = "/sisl-deadlines/calendar"
+      var conf_list_all = [];
+
+      // Borrowed from https://github.com/moment/moment-timezone/issues/167
+// Adds support for time zones 'UTC-12'..'UTC+12'
+function addUtcTimeZones() {
+  // Moment.js uses the IANA timezone database, which supports generic time zones like 'Etc/GMT+1'.
+  // However, the signs for these time zones are inverted compared to ISO 8601.
+  // For more details, see https://github.com/moment/moment-timezone/issues/167
+  for (let offset = -12; offset <= 12; offset++) {
+    const posixSign = offset <= 0 ? "+" : "-";
+    const isoSign = offset >= 0 ? "+" : "-";
+    const link = `Etc/GMT${posixSign}${Math.abs(
+      offset
+    )}|UTC${isoSign}${Math.abs(offset)}`;
+    moment.tz.link(link);
+  }
+}
+
+function update_filtering(data) {
+  var page_url = "/sisl-deadlines";
+  store.set("sisl.github.io-subs", data.subs);
+
+  $(".confItem").hide();
+  for (const j in data.all_subs) {
+    const s = data.all_subs[j];
+    const identifier = "." + s + "-conf";
+    if (data.subs.includes(s)) {
+      $(identifier).show();
+    }
+  }
+
+  if (subs.length == 0) {
+    window.history.pushState("", "", page_url);
+  } else {
+    window.history.pushState("", "", page_url + "/?sub=" + data.subs.join());
+  }
+}
+
+function createCalendarFromObject(data) {
+  return createCalendar({
+    options: {
+      class: "calendar-obj",
+
+      // You can pass an ID. If you don't, one will be generated for you
+      id: data.id,
+    },
+    data: {
+      // Event title
+      title: data.title,
+
+      // Event start date
+      start: data.date,
+
+      // Event duration
+      duration: 60,
+    },
+  });
+}
+
+      
+var subs = [];
+var _all_subs = [];
+// Get all subs
+var conf_type_data = [{"name":"Artificial Intelligence","sub":"AI","color":"#deff0a"},{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Aerospace","sub":"AA","color":"#0aefff"},{"name":"Autonomous Driving","sub":"AUTO","color":"#147df5"},{"name":"Robotics","sub":"RO","color":"#0aff99"},{"name":"Validation","sub":"VV","color":"#580aff"}];
+var sub2name = {}; var name2sub = {};
+for (var i = 0; i < conf_type_data.length; i++) {
+    _all_subs[i] = conf_type_data[i]['sub'];
+    sub2name[conf_type_data[i]['sub']] = conf_type_data[i]['name'];
+    name2sub[conf_type_data[i]['name']] = conf_type_data[i]['sub'];
+}
+const all_subs = _all_subs;
+
+
+      // Multi-select handler
+$("#subject-select").multiselect({
+  includeSelectAllOption: true,
+  numberDisplayed: 5,
+  onChange: function (option, checked, select) {
+    var csub = $(option).val();
+    if (checked == true) {
+      if (subs.indexOf(csub) < 0) subs.push(csub);
+    } else {
+      var idx = subs.indexOf(csub);
+      if (idx >= 0) subs.splice(idx, 1);
+      // In case a conf with multiple types (including this type) is wrongly hid, show all confs with at least one checked type.
+      for (var i = 0; i < subs.length; i++) {
+        // $('.' + subs[i] + '-conf').show();
+      }
+    }
+    update_filtering({ subs: subs, all_subs: all_subs });
+  },
+  onSelectAll: function (options) {
+    subs = all_subs;
+    update_filtering({ subs: subs, all_subs: all_subs });
+  },
+  onDeselectAll: function (options) {
+    subs = [];
+    update_filtering({ subs: subs, all_subs: all_subs });
+  },
+  buttonText: function (options, select) {
+    if (options.length === 0) {
+      return "None selected";
+    } else {
+      var labels = [];
+      options.each(function () {
+        if ($(this).attr("value") !== undefined) {
+          labels.push($(this).attr("value"));
+        } else {
+          labels.push($(this).html());
+        }
+      });
+      return labels.join(", ") + "";
+    }
+  },
+  buttonTitle: function (options, select) {
+    return "";
+  },
+});
+
+      
+      // calendar data template
+      var calendar_data = {
+        clickDay: function (e) {
+          if (e.events.length > 0) {
+            for (var i in e.events) {
+              window.open("/sisl-deadlines/conference?id=" + e.events[i].abbreviation, "_self")
+            }
+          }
+        },
+        mouseOnDay: function (e) {
+          if (e.events.length > 0) {
+            var content = "";
+
+            for (var i in e.events) {
+              var headline_color = "";
+              var break_html = '<hr>';
+
+              var location_html = '<img src="/sisl-deadlines/static/img/072-location.svg" className="own-badge"/>&nbsp;' + e.events[i].location;
+              var date_html = '<img src="/sisl-deadlines/static/img/084-calendar.svg" className="own-badge"/>&nbsp;' + e.events[i].date;
+
+              var badges_html = "";
+              var subs = e.events[i].subject.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                badges_html += '<span class="conf-sub conf-badge-small">' + sub + '</span>'
+              }
+              if (e.events[i].hindex != "") {
+                badges_html += '<span class="conf-h5 conf-badge-small">' + e.events[i].hindex + '</span>'
+              }
+
+              if (i == e.events.length - 1) {
+                break_html = '';
+              }
+
+
+              if (e.events[i].id.endsWith("deadline")) {
+                headline_color = 'deadline-text';
+              } else {
+              }
+              content +=
+                '<div class="event-tooltip-content">' +
+                '<div class="event-name ' + headline_color + '">' +
+                '<b>' + e.events[i].name + '</b>' + 
+                '</div>' +
+                '<div class="event-location">' +
+                location_html +
+                '<br>' +
+                date_html +
+                '<br>' +
+                badges_html +
+                '</div>' +
+                break_html +
+                '</div>';
+            }
+
+            $(e.element).popover({
+              trigger: "manual",
+              container: "body",
+              html: true,
+              content: content,
+            });
+
+            $(e.element).popover("show");
+          }
+        },
+        mouseOutDay: function (e) {
+          if (e.events.length > 0) {
+            $(e.element).popover("hide");
+          }
+        },
+        customDayRenderer: function (cellContent, currentDate) {
+          var today = new Date();
+          // render today
+          if (today.getFullYear() === currentDate.getFullYear() && today.getMonth() === currentDate.getMonth() && today.getDate() === currentDate.getDate()) {
+            cellContent.style = "background-color: gray;";
+          }
+        },
+        dayContextMenu: function (e) {
+          $(e.element).popover("hide");
+        },
+        dataSource: conf_list_all
+      }
+function load_conference_list() {
+  // Gather data
+  var conf_list_all = [];
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ecc25-deadline",
+      abbreviation: "ecc25",
+      name: "ECC 2025",
+      color: "red",
+      location: "Thessaloniki, Greece",
+      date: "June 24 - June 27, 2025",
+      hindex: "",
+      subject: "AA",
+      startDate: Date.parse("2024-11-08 23:59:59"),
+      endDate: Date.parse("2024-11-08 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ecc25-conference",
+        abbreviation: "ecc25",
+        name: "ECC 2025",
+        color: color,
+        location: "Thessaloniki, Greece",
+        date: "June 24 - June 27, 2025",
+        hindex: "",
+        subject: "AA",
+        startDate: Date.parse("2025-06-24"),
+        endDate: Date.parse("2025-06-27"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ieeea25-deadline",
+      abbreviation: "ieeea25",
+      name: "IEEEA 2025",
+      color: "red",
+      location: "Big Sky, MT",
+      date: "March 1 - March 8, 2025",
+      hindex: "",
+      subject: "AA",
+      startDate: Date.parse("2024-10-04 23:59:59"),
+      endDate: Date.parse("2024-10-04 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ieeea25-conference",
+        abbreviation: "ieeea25",
+        name: "IEEEA 2025",
+        color: color,
+        location: "Big Sky, MT",
+        date: "March 1 - March 8, 2025",
+        hindex: "",
+        subject: "AA",
+        startDate: Date.parse("2025-03-01"),
+        endDate: Date.parse("2025-03-08"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "rss25-deadline",
+      abbreviation: "rss25",
+      name: "RSS 2025",
+      color: "red",
+      location: "Los Angeles, CA",
+      date: "June 21 - June 25, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2025-01-24 23:59:59"),
+      endDate: Date.parse("2025-01-24 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "rss25-conference",
+        abbreviation: "rss25",
+        name: "RSS 2025",
+        color: color,
+        location: "Los Angeles, CA",
+        date: "June 21 - June 25, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-06-21"),
+        endDate: Date.parse("2025-06-25"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "aaai25-deadline",
+      abbreviation: "aaai25",
+      name: "AAAI 2025",
+      color: "red",
+      location: "Philadelphia, PA",
+      date: "February 25 - March 4, 2025",
+      hindex: "",
+      subject: "AI",
+      startDate: Date.parse("2024-08-15 23:59:59"),
+      endDate: Date.parse("2024-08-15 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+                    color = "#deff0a";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "aaai25-conference",
+        abbreviation: "aaai25",
+        name: "AAAI 2025",
+        color: color,
+        location: "Philadelphia, PA",
+        date: "February 25 - March 4, 2025",
+        hindex: "",
+        subject: "AI",
+        startDate: Date.parse("2025-02-25"),
+        endDate: Date.parse("2025-03-04"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "icara25-deadline",
+      abbreviation: "icara25",
+      name: "ICARA 2025",
+      color: "red",
+      location: "Zagreb, Croatia",
+      date: "February 12 - 14, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2024-09-25 23:59:59"),
+      endDate: Date.parse("2024-09-25 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "icara25-conference",
+        abbreviation: "icara25",
+        name: "ICARA 2025",
+        color: color,
+        location: "Zagreb, Croatia",
+        date: "February 12 - 14, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-02-12"),
+        endDate: Date.parse("2025-02-14"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "scitech25-deadline",
+      abbreviation: "scitech25",
+      name: "SciTech 2025",
+      color: "red",
+      location: "Orlando, FL",
+      date: "January 6 - 10, 2025",
+      hindex: "",
+      subject: "AA",
+      startDate: Date.parse("2024-08-23 07:59:59"),
+      endDate: Date.parse("2024-08-23 07:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "scitech25-conference",
+        abbreviation: "scitech25",
+        name: "SciTech 2025",
+        color: color,
+        location: "Orlando, FL",
+        date: "January 6 - 10, 2025",
+        hindex: "",
+        subject: "AA",
+        startDate: Date.parse("2025-01-06"),
+        endDate: Date.parse("2025-01-10"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "corl24-deadline",
+      abbreviation: "corl24",
+      name: "CoRL 2024",
+      color: "red",
+      location: "Munich, Germany",
+      date: "November 6 - 9, 2024",
+      hindex: "",
+      subject: "ROAI",
+      startDate: Date.parse("2024-06-06 23:59:59"),
+      endDate: Date.parse("2024-06-06 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "corl24-conference",
+        abbreviation: "corl24",
+        name: "CoRL 2024",
+        color: color,
+        location: "Munich, Germany",
+        date: "November 6 - 9, 2024",
+        hindex: "",
+        subject: "ROAI",
+        startDate: Date.parse("2024-11-06"),
+        endDate: Date.parse("2024-11-09"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "icra25-deadline",
+      abbreviation: "icra25",
+      name: "ICRA 2025",
+      color: "red",
+      location: "Atlanta, GA",
+      date: "May 19 - 23, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2024-10-15 23:59:59"),
+      endDate: Date.parse("2024-10-15 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "icra25-conference",
+        abbreviation: "icra25",
+        name: "ICRA 2025",
+        color: color,
+        location: "Atlanta, GA",
+        date: "May 19 - 23, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-05-19"),
+        endDate: Date.parse("2025-05-23"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "icaart25-deadline",
+      abbreviation: "icaart25",
+      name: "ICAART 2025",
+      color: "red",
+      location: "Porto, Portugal",
+      date: "Feburary 23-25, 2025",
+      hindex: "",
+      subject: "AI",
+      startDate: Date.parse("2024-12-20 23:59:59"),
+      endDate: Date.parse("2024-12-20 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+                    color = "#deff0a";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "icaart25-conference",
+        abbreviation: "icaart25",
+        name: "ICAART 2025",
+        color: color,
+        location: "Porto, Portugal",
+        date: "Feburary 23-25, 2025",
+        hindex: "",
+        subject: "AI",
+        startDate: Date.parse("2025-02-23"),
+        endDate: Date.parse("2025-02-25"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "kdd25-deadline",
+      abbreviation: "kdd25",
+      name: "KDD 2025",
+      color: "red",
+      location: "Toronto, Canada",
+      date: "August 3 - 7, 2025",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("2025-08-08 23:59:59"),
+      endDate: Date.parse("2025-08-08 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "kdd25-conference",
+        abbreviation: "kdd25",
+        name: "KDD 2025",
+        color: color,
+        location: "Toronto, Canada",
+        date: "August 3 - 7, 2025",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2025-08-03"),
+        endDate: Date.parse("2025-08-07"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "iclr25-deadline",
+      abbreviation: "iclr25",
+      name: "ICLR 2025",
+      color: "red",
+      location: "Singapore",
+      date: "April 24 - 28, 2025",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("2025-10-1 23:59:59"),
+      endDate: Date.parse("2025-10-1 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "iclr25-conference",
+        abbreviation: "iclr25",
+        name: "ICLR 2025",
+        color: color,
+        location: "Singapore",
+        date: "April 24 - 28, 2025",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2025-04-24"),
+        endDate: Date.parse("2025-04-28"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "rss24-deadline",
+      abbreviation: "rss24",
+      name: "RSS 2024",
+      color: "red",
+      location: "Delft, Netherlands",
+      date: "Jul 15-19, 2024",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2023-02-02 23:59:59"),
+      endDate: Date.parse("2023-02-02 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "rss24-conference",
+        abbreviation: "rss24",
+        name: "RSS 2024",
+        color: color,
+        location: "Delft, Netherlands",
+        date: "Jul 15-19, 2024",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2024-07-15"),
+        endDate: Date.parse("2024-07-19"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "cdc25-deadline",
+      abbreviation: "cdc25",
+      name: "CDC 2025",
+      color: "red",
+      location: "Rio de Janeiro, Brazil",
+      date: "December 9 - 12, 2025",
+      hindex: "",
+      subject: "ROAI",
+      startDate: Date.parse("2021-03-31 23:59:59"),
+      endDate: Date.parse("2021-03-31 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "cdc25-conference",
+        abbreviation: "cdc25",
+        name: "CDC 2025",
+        color: color,
+        location: "Rio de Janeiro, Brazil",
+        date: "December 9 - 12, 2025",
+        hindex: "",
+        subject: "ROAI",
+        startDate: Date.parse("2025-12-09"),
+        endDate: Date.parse("2025-12-12"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "iccv25-deadline",
+      abbreviation: "iccv25",
+      name: "ICCV 2025",
+      color: "red",
+      location: "Honolulu, HI",
+      date: "October 19 - 25, 2025",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "iccv25-conference",
+        abbreviation: "iccv25",
+        name: "ICCV 2025",
+        color: color,
+        location: "Honolulu, HI",
+        date: "October 19 - 25, 2025",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2025-10-19"),
+        endDate: Date.parse("2025-10-25"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "aamas25-deadline",
+      abbreviation: "aamas25",
+      name: "AAMAS 2025",
+      color: "red",
+      location: "Detroit, MI",
+      date: "May 19 - 23, 2025",
+      hindex: "",
+      subject: "MLAI",
+      startDate: Date.parse("2024-10-16 23:59:59"),
+      endDate: Date.parse("2024-10-16 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "aamas25-conference",
+        abbreviation: "aamas25",
+        name: "AAMAS 2025",
+        color: color,
+        location: "Detroit, MI",
+        date: "May 19 - 23, 2025",
+        hindex: "",
+        subject: "MLAI",
+        startDate: Date.parse("2025-05-19"),
+        endDate: Date.parse("2025-06-23"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "acc25-deadline",
+      abbreviation: "acc25",
+      name: "ACC 2025",
+      color: "red",
+      location: "Denver, CO",
+      date: "July 8 - 10, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2024-09-16 23:59:59"),
+      endDate: Date.parse("2024-09-16 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "acc25-conference",
+        abbreviation: "acc25",
+        name: "ACC 2025",
+        color: color,
+        location: "Denver, CO",
+        date: "July 8 - 10, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-07-08"),
+        endDate: Date.parse("2025-07-10"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "aistats25-deadline",
+      abbreviation: "aistats25",
+      name: "AISTATS 2025",
+      color: "red",
+      location: "Mai Khao, Thailand",
+      date: "May 3 - 5, 2025",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("2024-10-10 23:59:59"),
+      endDate: Date.parse("2024-10-10 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "aistats25-conference",
+        abbreviation: "aistats25",
+        name: "AISTATS 2025",
+        color: color,
+        location: "Mai Khao, Thailand",
+        date: "May 3 - 5, 2025",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2025-05-03"),
+        endDate: Date.parse("2025-05-05"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "tacas25-deadline",
+      abbreviation: "tacas25",
+      name: "TACAS 2025",
+      color: "red",
+      location: "Hamilton, Canada",
+      date: "May 3 - 8, 2025",
+      hindex: "",
+      subject: "VV",
+      startDate: Date.parse("2025-10-10 23:59:00"),
+      endDate: Date.parse("2025-10-10 23:59:00"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#580aff";
+            
+      
+      conf_list_all.push({
+        id: "tacas25-conference",
+        abbreviation: "tacas25",
+        name: "TACAS 2025",
+        color: color,
+        location: "Hamilton, Canada",
+        date: "May 3 - 8, 2025",
+        hindex: "",
+        subject: "VV",
+        startDate: Date.parse("2025-05-03"),
+        endDate: Date.parse("2025-05-08"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "l4dc25-deadline",
+      abbreviation: "l4dc25",
+      name: "L4DC 2025",
+      color: "red",
+      location: "Ann Arbor, MI",
+      date: "June 4 - 6, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2022-11-22 17:00:00"),
+      endDate: Date.parse("2022-11-22 17:00:00"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "l4dc25-conference",
+        abbreviation: "l4dc25",
+        name: "L4DC 2025",
+        color: color,
+        location: "Ann Arbor, MI",
+        date: "June 4 - 6, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-06-04"),
+        endDate: Date.parse("2025-06-06"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "nfm25-deadline",
+      abbreviation: "nfm25",
+      name: "NFM 2025",
+      color: "red",
+      location: "Hampton Roads, VA",
+      date: "June 11-13, 2025",
+      hindex: "",
+      subject: "VV",
+      startDate: Date.parse("2024-12-10 23:59:59"),
+      endDate: Date.parse("2024-12-10 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#580aff";
+            
+      
+      conf_list_all.push({
+        id: "nfm25-conference",
+        abbreviation: "nfm25",
+        name: "NFM 2025",
+        color: color,
+        location: "Hampton Roads, VA",
+        date: "June 11-13, 2025",
+        hindex: "",
+        subject: "VV",
+        startDate: Date.parse("2025-06-11"),
+        endDate: Date.parse("2025-06-13"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "icaps25-deadline",
+      abbreviation: "icaps25",
+      name: "ICAPS 2025",
+      color: "red",
+      location: "Melbourne, Australia",
+      date: "November 9-14, 2025",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("2024-11-1 23:59:59"),
+      endDate: Date.parse("2024-11-1 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "icaps25-conference",
+        abbreviation: "icaps25",
+        name: "ICAPS 2025",
+        color: color,
+        location: "Melbourne, Australia",
+        date: "November 9-14, 2025",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2025-11-09"),
+        endDate: Date.parse("2025-11-14"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ijcai25-deadline",
+      abbreviation: "ijcai25",
+      name: "IJCAI 2025",
+      color: "red",
+      location: "Montreal, Canada",
+      date: "August 8 - 14, 2025",
+      hindex: "",
+      subject: "MLAI",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ijcai25-conference",
+        abbreviation: "ijcai25",
+        name: "IJCAI 2025",
+        color: color,
+        location: "Montreal, Canada",
+        date: "August 8 - 14, 2025",
+        hindex: "",
+        subject: "MLAI",
+        startDate: Date.parse("2025-08-08"),
+        endDate: Date.parse("2025-08-14"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "cav24-deadline",
+      abbreviation: "cav24",
+      name: "CAV 2024",
+      color: "red",
+      location: "Montreal, Canada",
+      date: "July 24 - 27, 2024",
+      hindex: "",
+      subject: "VV",
+      startDate: Date.parse("2024-01-19 23:59:59"),
+      endDate: Date.parse("2024-01-19 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#580aff";
+            
+      
+      conf_list_all.push({
+        id: "cav24-conference",
+        abbreviation: "cav24",
+        name: "CAV 2024",
+        color: color,
+        location: "Montreal, Canada",
+        date: "July 24 - 27, 2024",
+        hindex: "",
+        subject: "VV",
+        startDate: Date.parse("2024-07-24"),
+        endDate: Date.parse("2024-07-27"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "iv25-deadline",
+      abbreviation: "iv25",
+      name: "IV 2025",
+      color: "red",
+      location: "Cluj-Napoca, Romania",
+      date: "June 22 - 25, 2025",
+      hindex: "",
+      subject: "AUTOAI",
+      startDate: Date.parse("2025-02-01 23:59:59"),
+      endDate: Date.parse("2025-02-01 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "iv25-conference",
+        abbreviation: "iv25",
+        name: "IV 2025",
+        color: color,
+        location: "Cluj-Napoca, Romania",
+        date: "June 22 - 25, 2025",
+        hindex: "",
+        subject: "AUTOAI",
+        startDate: Date.parse("2025-06-22"),
+        endDate: Date.parse("2025-06-25"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ccta25-deadline",
+      abbreviation: "ccta25",
+      name: "CCTA 2025",
+      color: "red",
+      location: "San Diego, CA",
+      date: "August 24 - 27, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2025-02-05 23:59:59"),
+      endDate: Date.parse("2025-02-05 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ccta25-conference",
+        abbreviation: "ccta25",
+        name: "CCTA 2025",
+        color: color,
+        location: "San Diego, CA",
+        date: "August 24 - 27, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-08-24"),
+        endDate: Date.parse("2025-08-27"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "iros25-deadline",
+      abbreviation: "iros25",
+      name: "IROS 2025",
+      color: "red",
+      location: "Hangzhou, China",
+      date: "October 19-25, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "iros25-conference",
+        abbreviation: "iros25",
+        name: "IROS 2025",
+        color: color,
+        location: "Hangzhou, China",
+        date: "October 19-25, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-10-19"),
+        endDate: Date.parse("2025-10-25"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "itsc25-deadline",
+      abbreviation: "itsc25",
+      name: "ITSC 2025",
+      color: "red",
+      location: "Gold Coast, Australia",
+      date: "November 18-21, 2025",
+      hindex: "",
+      subject: "AUTOAI",
+      startDate: Date.parse("2022-05-01 23:59:59"),
+      endDate: Date.parse("2022-05-01 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "itsc25-conference",
+        abbreviation: "itsc25",
+        name: "ITSC 2025",
+        color: color,
+        location: "Gold Coast, Australia",
+        date: "November 18-21, 2025",
+        hindex: "",
+        subject: "AUTOAI",
+        startDate: Date.parse("2025-11-18"),
+        endDate: Date.parse("2025-11-21"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "neurips24-deadline",
+      abbreviation: "neurips24",
+      name: "NeurIPS 2024",
+      color: "red",
+      location: "Vancouver, Canada",
+      date: "December 9 - 15, 2024",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "neurips24-conference",
+        abbreviation: "neurips24",
+        name: "NeurIPS 2024",
+        color: color,
+        location: "Vancouver, Canada",
+        date: "December 9 - 15, 2024",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse(""),
+        endDate: Date.parse(""),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "fsw25-deadline",
+      abbreviation: "fsw25",
+      name: "FSW 2025",
+      color: "red",
+      location: "Seattle, WA",
+      date: "March 24 - 27, 2025",
+      hindex: "",
+      subject: "AA",
+      startDate: Date.parse("2025-02-24 23:59:59"),
+      endDate: Date.parse("2025-02-24 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "fsw25-conference",
+        abbreviation: "fsw25",
+        name: "FSW 2025",
+        color: color,
+        location: "Seattle, WA",
+        date: "March 24 - 27, 2025",
+        hindex: "",
+        subject: "AA",
+        startDate: Date.parse("2025-03-24"),
+        endDate: Date.parse("2025-03-27"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ecmlpkdd2025-deadline",
+      abbreviation: "ecmlpkdd2025",
+      name: "ECML-PKDD 2025",
+      color: "red",
+      location: "Porto, Portugal",
+      date: "September 15 - 19, 2025",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ecmlpkdd2025-conference",
+        abbreviation: "ecmlpkdd2025",
+        name: "ECML-PKDD 2025",
+        color: color,
+        location: "Porto, Portugal",
+        date: "September 15 - 19, 2025",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2022-09-15"),
+        endDate: Date.parse("2022-09-19"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "aviation25-deadline",
+      abbreviation: "aviation25",
+      name: "AVIATION 2025",
+      color: "red",
+      location: "Las Vegas, NV",
+      date: "July 21 - 25, 2025",
+      hindex: "",
+      subject: "AA",
+      startDate: Date.parse("2025-06-16 19:59:59"),
+      endDate: Date.parse("2025-06-16 19:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "aviation25-conference",
+        abbreviation: "aviation25",
+        name: "AVIATION 2025",
+        color: color,
+        location: "Las Vegas, NV",
+        date: "July 21 - 25, 2025",
+        hindex: "",
+        subject: "AA",
+        startDate: Date.parse("2025-07-21"),
+        endDate: Date.parse("2025-07-25"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "dasc24-deadline",
+      abbreviation: "dasc24",
+      name: "DASC 2024",
+      color: "red",
+      location: "San Diego, CA",
+      date: "September 29 - October 3, 2024",
+      hindex: "",
+      subject: "AA",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "dasc24-conference",
+        abbreviation: "dasc24",
+        name: "DASC 2024",
+        color: color,
+        location: "San Diego, CA",
+        date: "September 29 - October 3, 2024",
+        hindex: "",
+        subject: "AA",
+        startDate: Date.parse("2024-09-29"),
+        endDate: Date.parse("2024-10-03"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "hri25-deadline",
+      abbreviation: "hri25",
+      name: "HRI 2025",
+      color: "red",
+      location: "Melbourne, Australia",
+      date: "March 4 - 6, 2025",
+      hindex: "",
+      subject: "RO",
+      startDate: Date.parse("2024-10-01 23:59:59"),
+      endDate: Date.parse("2024-10-01 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+                    color = "#0aff99";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "hri25-conference",
+        abbreviation: "hri25",
+        name: "HRI 2025",
+        color: color,
+        location: "Melbourne, Australia",
+        date: "March 4 - 6, 2025",
+        hindex: "",
+        subject: "RO",
+        startDate: Date.parse("2025-03-04"),
+        endDate: Date.parse("2025-03-06"),
+      });
+    
+  
+
+  return conf_list_all;
+}
+
+function update_filtering(data) {
+  store.set('sisl.github.io-subs', data.subs);
+
+  conf_list = conf_list_all.filter(v => {
+    var commonValues = data.subs.filter(function (value) {
+      return v.subject.indexOf(value) > -1;
+    });
+    var subject_match = commonValues.length > 0;
+    return subject_match;
+  });
+
+  // rerender calendar
+  calendar_data['dataSource'] = conf_list;  // need to update only this
+  calendar = new Calendar("#calendar-page", calendar_data);
+
+  if (subs.length == 0) {
+    window.history.pushState('', '', page_url);
+  } else {
+    window.history.pushState('', '', page_url + '/?sub=' + data.subs.join());
+  }
+}  // overwrites update_filtering
+
+
+      $(function () {
+        // Get data from URL/Cache
+        // Get subjects from URL/Cache
+var url = new URL(window.location);
+subs = url.searchParams.get("sub");
+if (subs == undefined) {
+  subs = store.get("sisl.github.io-subs");
+} else {
+  subs = subs.toUpperCase().split(",");
+}
+
+// Apply selections
+if (subs == undefined) {
+  subs = all_subs;
+}
+$("#subject-select").multiselect("select", subs);
+update_filtering({ subs: subs, all_subs: all_subs });
+
+
+        conf_list_all = load_conference_list();
+        conf_list = conf_list_all;
+
+        // Render calendar
+        update_filtering({ subs: subs, all_subs: all_subs });
+      });
+
+
+      (function (i, s, o, g, r, a, m) {
+  i["GoogleAnalyticsObject"] = r;
+  (i[r] =
+    i[r] ||
+    function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }),
+    (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(
+  window,
+  document,
+  "script",
+  "https://www.google-analytics.com/analytics.js",
+  "ga"
+);
+ga("create", "", "auto");
+ga("send", "pageview");
+
+    </script>
+  </body>
+</html>

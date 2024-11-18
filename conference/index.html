@@ -1,0 +1,2044 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>SISL Conference Deadlines</title>
+<meta name="description" content="Deadline countdowns for conferences relating to research at the <a href='https://sisl.stanford.edu'>Stanford Intelligent Systems Laboratory (SISL)</a>">
+<meta name="author" content="Robert Moss (forked from Abhishek Das)">
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/js-year-calendar.min.css?t=1731959239" media="screen,projection">
+
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/deadlines.css?t=1731959239" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/sisl-deadlines/static/css/calendar.css?t=1731959239" media="screen,projection">
+
+<link rel="shortcut icon" href="/sisl-deadlines/static/img/favicon.png">
+
+<script type="text/javascript" src="/sisl-deadlines/static/js/js-year-calendar.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/popper.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/moment.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/moment-timezone-with-data.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/store.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/ouical.min.js"></script>
+<script type="text/javascript" src="/sisl-deadlines/static/js/bootstrap-multiselect.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8C1515;">
+  <div class="container">
+      <div style="vertical-align: middle; padding-top: 0px;">
+        <div>
+          <a class="navbar-brand" href="/sisl-deadlines/" style="border-bottom: none; line-height: 0.1em;">
+          SISL Deadlines<br><br>
+          </a>
+        </div>
+      </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler"
+      aria-controls="navbars-toggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <a href="/sisl-deadlines/" class="nav-link" style="border-bottom: none">Countdowns</a>
+        </li>
+        <li>
+          <a href="/sisl-deadlines/calendar" class="nav-link" style="border-bottom: none;">Calendar</a>
+        </li>
+      </ul>
+      <div class="twitter-github-icons">
+        <a class="btn btn-sisl" href="https://sisl.stanford.edu">
+          <span>SISL</span></a>
+        <a href="https://twitter.com/share" class="twitter-share-button"
+          data-text="Deadline countdowns for conferences relating to research at the <a href='https://sisl.stanford.edu'>Stanford Intelligent Systems Laboratory (SISL)</a>"
+          data-show-count="false" style="font-size: 13px;">Tweet</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        &nbsp; &nbsp;
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=sisl&repo=sisl-deadlines&type=star&count=true"
+          frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+      <div class="page-header" id="conf-title">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>
+              <span id="conf-title-href"></span>
+              <span id="twitter-box"></span>
+            </h1>
+            <h3 id="conf-full-name">
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <span id="conf-subs" title="Conference subjects"></span>
+          </div>
+        </div>
+      </div>
+      <div id="page-content">
+        <div id="conf-key-facts" class="row">
+          <div class="col-12">
+            <img src="/sisl-deadlines/static/img/084-calendar.svg" class="badge-link" />
+            <span id="conf-date"></span>.
+          </div>
+          <div class="col-12">
+            <img src="/sisl-deadlines/static/img/072-location.svg" class="badge-link" />
+            <a id="conf-place" target="_blank" nohref></a>.
+          </div>
+          <div class="col-12">
+            <img src="/sisl-deadlines/static/img/203-earth.svg" class="badge-link" />
+            <a id="conf-website" target="_blank" nohref></a>
+          </div>
+          <div id="conf-paperslink-div" class="col-12">
+            <img src="/sisl-deadlines/static/img/033-books.svg" class="badge-link" />
+            Accepted Papers:
+            <a id="conf-paperslink" target="_blank" nohref></a>
+          </div>
+          <div id="conf-pwclink-div" class="col-12">
+            <div class="icon-inner pwc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="s-ion-icon"><path d="M88 128h48v256H88zM232 128h48v256h-48zM160 144h48v224h-48zM304 144h48v224h-48zM376 128h48v256h-48z"></path><path d="M104 104V56H16v400h88v-48H64V104zM408 56v48h40v304h-40v48h88V56z"></path></svg></div>
+            Papers with Code:
+            <a id="conf-pwclink" target="_blank" nohref></a>
+          </div>
+        </div>
+        <div id="conf-deadline-info" class="row">
+          <div class="meta deadline col-12 col-md-6">
+            Download Conference deadline:
+          </div>
+          <div id="conference-deadline" class="calendar meta col-sm-12 col-md-6">
+          </div>
+          <div class="meta deadline col-12 col-md-6">
+            Deadline in timezone from conference website:
+          </div>
+          <div class="meta col-sm-12 col-md-6">
+            <span class="deadline-time"></span>
+          </div>
+              <div class="meta col-sm-12 col-md-6">
+                Deadline in your local <span class="local-timezone">America/New_York</span> timezone:
+              </div>
+              <div class="local-timezone-hide meta col-sm-12 col-md-6">
+                <span class="deadline-local-time"></span>
+              </div>
+          </div>
+        <div id="conf-deadline-timer" class="row">
+          <div id="conf-timer" class="col-12">
+          </div>
+        </div>
+      </div>
+        <hr>
+        <footer>
+          <div class="row">
+  <div class="col-12 col-sm-12">
+    <a href="/">sisl.github.io</a>
+    was forked from 
+    <a href="https://twitter.com/abhshkdz">abhshkdz</a> and the original site is now run by
+    <a href="https://paperswithcode.com/">Papers With Code</a>.<br>
+  </div>
+</div>
+
+        </footer>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+    $(function() {
+        var url = new URL(window.location);
+        var conf = url.searchParams.get('id');
+
+        
+var subs = [];
+var _all_subs = [];
+// Get all subs
+var conf_type_data = [{"name":"Artificial Intelligence","sub":"AI","color":"#deff0a"},{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Aerospace","sub":"AA","color":"#0aefff"},{"name":"Autonomous Driving","sub":"AUTO","color":"#147df5"},{"name":"Robotics","sub":"RO","color":"#0aff99"},{"name":"Validation","sub":"VV","color":"#580aff"}];
+var sub2name = {}; var name2sub = {};
+for (var i = 0; i < conf_type_data.length; i++) {
+    _all_subs[i] = conf_type_data[i]['sub'];
+    sub2name[conf_type_data[i]['sub']] = conf_type_data[i]['name'];
+    name2sub[conf_type_data[i]['name']] = conf_type_data[i]['sub'];
+}
+const all_subs = _all_subs;
+
+
+        // Borrowed from https://github.com/moment/moment-timezone/issues/167
+// Adds support for time zones 'UTC-12'..'UTC+12'
+function addUtcTimeZones() {
+  // Moment.js uses the IANA timezone database, which supports generic time zones like 'Etc/GMT+1'.
+  // However, the signs for these time zones are inverted compared to ISO 8601.
+  // For more details, see https://github.com/moment/moment-timezone/issues/167
+  for (let offset = -12; offset <= 12; offset++) {
+    const posixSign = offset <= 0 ? "+" : "-";
+    const isoSign = offset >= 0 ? "+" : "-";
+    const link = `Etc/GMT${posixSign}${Math.abs(
+      offset
+    )}|UTC${isoSign}${Math.abs(offset)}`;
+    moment.tz.link(link);
+  }
+}
+
+function update_filtering(data) {
+  var page_url = "/sisl-deadlines";
+  store.set("sisl.github.io-subs", data.subs);
+
+  $(".confItem").hide();
+  for (const j in data.all_subs) {
+    const s = data.all_subs[j];
+    const identifier = "." + s + "-conf";
+    if (data.subs.includes(s)) {
+      $(identifier).show();
+    }
+  }
+
+  if (subs.length == 0) {
+    window.history.pushState("", "", page_url);
+  } else {
+    window.history.pushState("", "", page_url + "/?sub=" + data.subs.join());
+  }
+}
+
+function createCalendarFromObject(data) {
+  return createCalendar({
+    options: {
+      class: "calendar-obj",
+
+      // You can pass an ID. If you don't, one will be generated for you
+      id: data.id,
+    },
+    data: {
+      // Event title
+      title: data.title,
+
+      // Event start date
+      start: data.date,
+
+      // Event duration
+      duration: 60,
+    },
+  });
+}
+
+
+        addUtcTimeZones();
+        try {
+          var local_timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+          $('.local-timezone').text(local_timezone.toString());
+        }
+        catch(err) {
+          $('.local-timezone-hide').hide();
+        }
+
+        
+            if (conf == "ecc25") {
+              
+              $('#conf-title-href').text("ECC 2025");
+              $('#conf-title-href').attr('href', "/conference?id=ecc25");
+              // set badges
+              var subs = 'AA'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("June 24 - June 27, 2025");
+              $('#conf-place').text("Thessaloniki, Greece");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Thessaloniki, Greece")
+              $('#conf-website').text("https://ecc25.euca-ecc.org/");
+              $('#conf-website').attr('href', "https://ecc25.euca-ecc.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ECC2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC" ;
+                var confDeadline = moment.tz("2024-11-08 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'ecc25',
+                  title: 'ECC 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "ieeea25") {
+              
+              $('#conf-title-href').text("IEEEA 2025");
+              $('#conf-title-href').attr('href', "/conference?id=ieeea25");
+              // set badges
+              var subs = 'AA'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("March 1 - March 8, 2025");
+              $('#conf-place').text("Big Sky, MT");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Big Sky, MT")
+              $('#conf-website').text("https://www.aiaa.org/events-learning/event/2025/03/01/default-calendar/2025-ieee-aerospace-conference");
+              $('#conf-website').attr('href', "https://www.aiaa.org/events-learning/event/2025/03/01/default-calendar/2025-ieee-aerospace-conference");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #IEEEA2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-10-04 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'ieeea25',
+                  title: 'IEEEA 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "rss25") {
+              
+              $('#conf-title-href').text("RSS 2025");
+              $('#conf-title-href').attr('href', "/conference?id=rss25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("June 21 - June 25, 2025");
+              $('#conf-place').text("Los Angeles, CA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Los Angeles, CA")
+              $('#conf-website').text("https://roboticsconference.org/");
+              $('#conf-website').attr('href', "https://roboticsconference.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #RSS2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2025-01-24 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'rss25',
+                  title: 'RSS 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "aaai25") {
+              
+              $('#conf-title-href').text("AAAI 2025");
+              $('#conf-title-href').attr('href', "/conference?id=aaai25");
+              // set badges
+              var subs = 'AI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("February 25 - March 4, 2025");
+              $('#conf-place').text("Philadelphia, PA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Philadelphia, PA")
+              $('#conf-website').text("https://aaai.org/conference/aaai/aaai-25/");
+              $('#conf-website').attr('href', "https://aaai.org/conference/aaai/aaai-25/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #AAAI2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-08-15 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'aaai25',
+                  title: 'AAAI 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "icara25") {
+              
+              $('#conf-title-href').text("ICARA 2025");
+              $('#conf-title-href').attr('href', "/conference?id=icara25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("February 12 - 14, 2025");
+              $('#conf-place').text("Zagreb, Croatia");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Zagreb, Croatia")
+              $('#conf-website').text("https://www.icara.us/");
+              $('#conf-website').attr('href', "https://www.icara.us/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ICARA2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC+2" ;
+                var confDeadline = moment.tz("2024-09-25 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'icara25',
+                  title: 'ICARA 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "scitech25") {
+              
+              $('#conf-title-href').text("SciTech 2025");
+              $('#conf-title-href').attr('href', "/conference?id=scitech25");
+              // set badges
+              var subs = 'AA'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("January 6 - 10, 2025");
+              $('#conf-place').text("Orlando, FL");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Orlando, FL")
+              $('#conf-website').text("https://www.aiaa.org/SciTech");
+              $('#conf-website').attr('href', "https://www.aiaa.org/SciTech");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #SciTech2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-4" ;
+                var confDeadline = moment.tz("2024-08-23 07:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'scitech25',
+                  title: 'SciTech 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "corl24") {
+              
+              $('#conf-title-href').text("CoRL 2024");
+              $('#conf-title-href').attr('href', "/conference?id=corl24");
+              // set badges
+              var subs = 'ROAI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("November 6 - 9, 2024");
+              $('#conf-place').text("Munich, Germany");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Munich, Germany")
+              $('#conf-website').text("https://www.corl.org/");
+              $('#conf-website').attr('href', "https://www.corl.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #CoRL2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC+2" ;
+                var confDeadline = moment.tz("2024-06-06 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'corl24',
+                  title: 'CoRL 2024 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "icra25") {
+              
+              $('#conf-title-href').text("ICRA 2025");
+              $('#conf-title-href').attr('href', "/conference?id=icra25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("May 19 - 23, 2025");
+              $('#conf-place').text("Atlanta, GA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Atlanta, GA")
+              $('#conf-website').text("https://2025.ieee-icra.org/");
+              $('#conf-website').attr('href', "https://2025.ieee-icra.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ICRA2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-4" ;
+                var confDeadline = moment.tz("2024-10-15 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'icra25',
+                  title: 'ICRA 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "icaart25") {
+              
+              $('#conf-title-href').text("ICAART 2025");
+              $('#conf-title-href').attr('href', "/conference?id=icaart25");
+              // set badges
+              var subs = 'AI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("Feburary 23-25, 2025");
+              $('#conf-place').text("Porto, Portugal");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Porto, Portugal")
+              $('#conf-website').text("https://icaart.scitevents.org");
+              $('#conf-website').attr('href', "https://icaart.scitevents.org");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ICAART2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-12-20 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'icaart25',
+                  title: 'ICAART 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "kdd25") {
+              
+              $('#conf-title-href').text("KDD 2025");
+              $('#conf-title-href').attr('href', "/conference?id=kdd25");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("August 3 - 7, 2025");
+              $('#conf-place').text("Toronto, Canada");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Toronto, Canada")
+              $('#conf-website').text("https://kdd2025.kdd.org/");
+              $('#conf-website').attr('href', "https://kdd2025.kdd.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #KDD2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2025-08-08 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'kdd25',
+                  title: 'KDD 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "iclr25") {
+              
+              $('#conf-title-href').text("ICLR 2025");
+              $('#conf-title-href').attr('href', "/conference?id=iclr25");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("April 24 - 28, 2025");
+              $('#conf-place').text("Singapore");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Singapore")
+              $('#conf-website').text("https://iclr.cc");
+              $('#conf-website').attr('href', "https://iclr.cc");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ICLR2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2025-10-1 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'iclr25',
+                  title: 'ICLR 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "rss24") {
+              
+              $('#conf-title-href').text("RSS 2024");
+              $('#conf-title-href').attr('href', "/conference?id=rss24");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("Jul 15-19, 2024");
+              $('#conf-place').text("Delft, Netherlands");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Delft, Netherlands")
+              $('#conf-website').text("https://roboticsconference.org/");
+              $('#conf-website').attr('href', "https://roboticsconference.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #RSS2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2023-02-02 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'rss24',
+                  title: 'RSS 2024 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "cdc25") {
+              
+              $('#conf-title-href').text("CDC 2025");
+              $('#conf-title-href').attr('href', "/conference?id=cdc25");
+              // set badges
+              var subs = 'ROAI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("December 9 - 12, 2025");
+              $('#conf-place').text("Rio de Janeiro, Brazil");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Rio de Janeiro, Brazil")
+              $('#conf-website').text("https://cdc2025.ieeecss.org/");
+              $('#conf-website').attr('href', "https://cdc2025.ieeecss.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #CDC2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-3" ;
+                var confDeadline = moment.tz("2021-03-31 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'cdc25',
+                  title: 'CDC 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "iccv25") {
+              
+              $('#conf-title-href').text("ICCV 2025");
+              $('#conf-title-href').attr('href', "/conference?id=iccv25");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("October 19 - 25, 2025");
+              $('#conf-place').text("Honolulu, HI");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Honolulu, HI")
+              $('#conf-website').text("https://www.thecvf.com/");
+              $('#conf-website').attr('href', "https://www.thecvf.com/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ICCV2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
+              
+            }
+        
+            if (conf == "aamas25") {
+              
+              $('#conf-title-href').text("AAMAS 2025");
+              $('#conf-title-href').attr('href', "/conference?id=aamas25");
+              // set badges
+              var subs = 'MLAI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("May 19 - 23, 2025");
+              $('#conf-place').text("Detroit, MI");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Detroit, MI")
+              $('#conf-website').text("https://aamas2025.org/");
+              $('#conf-website').attr('href', "https://aamas2025.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #AAMAS2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-10-16 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'aamas25',
+                  title: 'AAMAS 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "acc25") {
+              
+              $('#conf-title-href').text("ACC 2025");
+              $('#conf-title-href').attr('href', "/conference?id=acc25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("July 8 - 10, 2025");
+              $('#conf-place').text("Denver, CO");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Denver, CO")
+              $('#conf-website').text("https://acc2025.a2c2.org/");
+              $('#conf-website').attr('href', "https://acc2025.a2c2.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ACC2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-7" ;
+                var confDeadline = moment.tz("2024-09-16 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'acc25',
+                  title: 'ACC 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "aistats25") {
+              
+              $('#conf-title-href').text("AISTATS 2025");
+              $('#conf-title-href').attr('href', "/conference?id=aistats25");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("May 3 - 5, 2025");
+              $('#conf-place').text("Mai Khao, Thailand");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Mai Khao, Thailand")
+              $('#conf-website').text("https://aistats.org/aistats2025//");
+              $('#conf-website').attr('href', "https://aistats.org/aistats2025//");
+              
+                $('#conf-paperslink').text("http://proceedings.mlr.press/v151/");
+                $('#conf-paperslink').attr('href', "http://proceedings.mlr.press/v151/");
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #AISTATS2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-10-10 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'aistats25',
+                  title: 'AISTATS 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "tacas25") {
+              
+              $('#conf-title-href').text("TACAS 2025");
+              $('#conf-title-href').attr('href', "/conference?id=tacas25");
+              // set badges
+              var subs = 'VV'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("May 3 - 8, 2025");
+              $('#conf-place').text("Hamilton, Canada");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Hamilton, Canada")
+              $('#conf-website').text("https://etaps.org/2025/");
+              $('#conf-website').attr('href', "https://etaps.org/2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #TACAS2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2025-10-10 23:59:00", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'tacas25',
+                  title: 'TACAS 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "l4dc25") {
+              
+              $('#conf-title-href').text("L4DC 2025");
+              $('#conf-title-href').attr('href', "/conference?id=l4dc25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("June 4 - 6, 2025");
+              $('#conf-place').text("Ann Arbor, MI");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Ann Arbor, MI")
+              $('#conf-website').text("https://sites.google.com/umich.edu/l4dc2025/");
+              $('#conf-website').attr('href', "https://sites.google.com/umich.edu/l4dc2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #L4DC2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-5" ;
+                var confDeadline = moment.tz("2022-11-22 17:00:00", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'l4dc25',
+                  title: 'L4DC 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "nfm25") {
+              
+              $('#conf-title-href').text("NFM 2025");
+              $('#conf-title-href').attr('href', "/conference?id=nfm25");
+              // set badges
+              var subs = 'VV'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("June 11-13, 2025");
+              $('#conf-place').text("Hampton Roads, VA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Hampton Roads, VA")
+              $('#conf-website').text("https://shemesh.larc.nasa.gov/nfm2025/");
+              $('#conf-website').attr('href', "https://shemesh.larc.nasa.gov/nfm2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #NFM2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-7" ;
+                var confDeadline = moment.tz("2024-12-10 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'nfm25',
+                  title: 'NFM 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "icaps25") {
+              
+              $('#conf-title-href').text("ICAPS 2025");
+              $('#conf-title-href').attr('href', "/conference?id=icaps25");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("November 9-14, 2025");
+              $('#conf-place').text("Melbourne, Australia");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Melbourne, Australia")
+              $('#conf-website').text("http://icaps25.icaps-conference.org");
+              $('#conf-website').attr('href', "http://icaps25.icaps-conference.org");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ICAPS2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-11-1 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'icaps25',
+                  title: 'ICAPS 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "ijcai25") {
+              
+              $('#conf-title-href').text("IJCAI 2025");
+              $('#conf-title-href').attr('href', "/conference?id=ijcai25");
+              // set badges
+              var subs = 'MLAI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("August 8 - 14, 2025");
+              $('#conf-place').text("Montreal, Canada");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Montreal, Canada")
+              $('#conf-website').text("https://www.ijcai.org");
+              $('#conf-website').attr('href', "https://www.ijcai.org");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #IJCAI2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
+              
+            }
+        
+            if (conf == "cav24") {
+              
+              $('#conf-title-href').text("CAV 2024");
+              $('#conf-title-href').attr('href', "/conference?id=cav24");
+              // set badges
+              var subs = 'VV'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("July 24 - 27, 2024");
+              $('#conf-place').text("Montreal, Canada");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Montreal, Canada")
+              $('#conf-website').text("http://i-cav.org/2024/");
+              $('#conf-website').attr('href', "http://i-cav.org/2024/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #CAV2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-01-19 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'cav24',
+                  title: 'CAV 2024 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "iv25") {
+              
+              $('#conf-title-href').text("IV 2025");
+              $('#conf-title-href').attr('href', "/conference?id=iv25");
+              // set badges
+              var subs = 'AUTOAI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("June 22 - 25, 2025");
+              $('#conf-place').text("Cluj-Napoca, Romania");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Cluj-Napoca, Romania")
+              $('#conf-website').text("https://ieee-iv.org/2025/");
+              $('#conf-website').attr('href', "https://ieee-iv.org/2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #IV2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC" ;
+                var confDeadline = moment.tz("2025-02-01 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'iv25',
+                  title: 'IV 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "ccta25") {
+              
+              $('#conf-title-href').text("CCTA 2025");
+              $('#conf-title-href').attr('href', "/conference?id=ccta25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("August 24 - 27, 2025");
+              $('#conf-place').text("San Diego, CA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=San Diego, CA")
+              $('#conf-website').text("https://ccta2025.ieeecss.org/");
+              $('#conf-website').attr('href', "https://ccta2025.ieeecss.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #CCTA2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2025-02-05 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'ccta25',
+                  title: 'CCTA 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "iros25") {
+              
+              $('#conf-title-href').text("IROS 2025");
+              $('#conf-title-href').attr('href', "/conference?id=iros25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("October 19-25, 2025");
+              $('#conf-place').text("Hangzhou, China");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Hangzhou, China")
+              $('#conf-website').text("https://irmv.sjtu.edu.cn/iros2025/");
+              $('#conf-website').attr('href', "https://irmv.sjtu.edu.cn/iros2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #IROS2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
+              
+            }
+        
+            if (conf == "itsc25") {
+              
+              $('#conf-title-href').text("ITSC 2025");
+              $('#conf-title-href').attr('href', "/conference?id=itsc25");
+              // set badges
+              var subs = 'AUTOAI'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("November 18-21, 2025");
+              $('#conf-place').text("Gold Coast, Australia");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Gold Coast, Australia")
+              $('#conf-website').text("https://ieee-itsc.org/2025/");
+              $('#conf-website').attr('href', "https://ieee-itsc.org/2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ITSC2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2022-05-01 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'itsc25',
+                  title: 'ITSC 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "neurips24") {
+              
+              $('#conf-title-href').text("NeurIPS 2024");
+              $('#conf-title-href').attr('href', "/conference?id=neurips24");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("December 9 - 15, 2024");
+              $('#conf-place').text("Vancouver, Canada");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Vancouver, Canada")
+              $('#conf-website').text("https://neurips.cc/");
+              $('#conf-website').attr('href', "https://neurips.cc/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #NeurIPS2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
+              
+            }
+        
+            if (conf == "fsw25") {
+              
+              $('#conf-title-href').text("FSW 2025");
+              $('#conf-title-href').attr('href', "/conference?id=fsw25");
+              // set badges
+              var subs = 'AA'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("March 24 - 27, 2025");
+              $('#conf-place').text("Seattle, WA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Seattle, WA")
+              $('#conf-website').text("https://flightsoftware.org/workshop/FSW2025");
+              $('#conf-website').attr('href', "https://flightsoftware.org/workshop/FSW2025");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #FSW2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-7" ;
+                var confDeadline = moment.tz("2025-02-24 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'fsw25',
+                  title: 'FSW 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "ecmlpkdd2025") {
+              
+              $('#conf-title-href').text("ECML-PKDD 2025");
+              $('#conf-title-href').attr('href', "/conference?id=ecmlpkdd2025");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("September 15 - 19, 2025");
+              $('#conf-place').text("Porto, Portugal");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Porto, Portugal")
+              $('#conf-website').text("https://ecmlpkdd.org/2025/");
+              $('#conf-website').attr('href', "https://ecmlpkdd.org/2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #ECML-PKDD2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
+              
+            }
+        
+            if (conf == "aviation25") {
+              
+              $('#conf-title-href').text("AVIATION 2025");
+              $('#conf-title-href').attr('href', "/conference?id=aviation25");
+              // set badges
+              var subs = 'AA'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("July 21 - 25, 2025");
+              $('#conf-place').text("Las Vegas, NV");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Las Vegas, NV")
+              $('#conf-website').text("https://www.aiaa.org/aviation");
+              $('#conf-website').attr('href', "https://www.aiaa.org/aviation");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #AVIATION2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-5" ;
+                var confDeadline = moment.tz("2025-06-16 19:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'aviation25',
+                  title: 'AVIATION 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "dasc24") {
+              
+              $('#conf-title-href').text("DASC 2024");
+              $('#conf-title-href').attr('href', "/conference?id=dasc24");
+              // set badges
+              var subs = 'AA'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("September 29 - October 3, 2024");
+              $('#conf-place').text("San Diego, CA");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=San Diego, CA")
+              $('#conf-website').text("https://2024.dasconline.org/");
+              $('#conf-website').attr('href', "https://2024.dasconline.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #DASC2024 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                $('#conf-timer').html("TBA");
+                $('.deadline-time').html("TBA");
+                $('.deadline-local-time').html("TBA");
+              
+            }
+        
+            if (conf == "hri25") {
+              
+              $('#conf-title-href').text("HRI 2025");
+              $('#conf-title-href').attr('href', "/conference?id=hri25");
+              // set badges
+              var subs = 'RO'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("March 4 - 6, 2025");
+              $('#conf-place').text("Melbourne, Australia");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Melbourne, Australia")
+              $('#conf-website').text("https://humanrobotinteraction.org/2025/");
+              $('#conf-website').attr('href', "https://humanrobotinteraction.org/2025/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #HRI2025 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2024-10-01 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'hri25',
+                  title: 'HRI 2025 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+    });
+
+    </script>
+  </body>
+</html>
